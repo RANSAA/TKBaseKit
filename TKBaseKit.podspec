@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
                    DESC
   spec.homepage     = "https://github.com/RANSAA/TKBaseKit"   #github项目首页
   spec.license      = "MIT"     #开源协议方式
-  spec.author             = { "sayaDev" => "1352892108@qq.com" }    #作者
+  spec.author       = { "sayaDev" => "1352892108@qq.com" }    #作者
   spec.source       = { :git => "https://github.com/RANSAA/TKBaseKit.git", :tag => "v#{spec.version}" } #对应github资源与版本
   spec.requires_arc = true    #支持arc
   spec.platform     = :ios, "8.0"         #支持版本
@@ -51,6 +51,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.framework"
+    ss.frameworks = "Security"
     ss.dependency 'Masonry'
     ss.dependency 'MJRefresh', '~> 3.2.0'
     ss.dependency 'GTMBase64', '~> 1.0.1'

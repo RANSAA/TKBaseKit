@@ -10,16 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TKSDKEncryptTool : NSObject
+@interface TKSDKEncryptXORTool : NSObject
 /** 单例 */
 + (instancetype)shared;
 /** 自定义加密密码,不推荐使用 */
-- (void)customSecretKey:(NSString *)secretKey;
-
+- (void)TK_XORCustomSecretKey:(NSString *)secretKey;
 /** 加密并返回 */
-+ (NSString*)TKXOREncodedStr:(NSString *)inputString;
++ (NSString*)TK_XOREncodedStr:(NSString *)inputString;
 /** 解码并返回 */
-+ (NSString*)TKXORDecodeStr:(NSString *)xorString;
++ (NSString*)TK_XORDecodeStr:(NSString *)xorString;
+
 @end
 
 NS_ASSUME_NONNULL_END

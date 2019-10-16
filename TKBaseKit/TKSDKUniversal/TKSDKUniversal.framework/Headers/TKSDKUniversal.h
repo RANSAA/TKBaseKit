@@ -39,7 +39,7 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 
 //通用的一些基础工具类
 #import "TKSDKClearManager.h"
-#import "TKSDKEncryptTool.h"
+#import "TKSDKEncryptXORTool.h"
 #import "TKSDKImageTool.h"
 #import "TKSDKLayout.h"
 #import "TKSDKUniversalBundle.h"

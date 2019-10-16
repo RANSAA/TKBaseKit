@@ -1,5 +1,5 @@
 //
-//  TKSDKEncrytTool.h
+//  TKSDKEncryptTool.h
 //  TKSDKTool
 //
 //  Created by Mac on 2019/5/25.
@@ -15,7 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TKSDKEncrytTool : NSObject
+@interface TKSDKEncryptTool : NSObject
 
 #pragma mark ---DES加密解密---
 /**
