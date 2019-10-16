@@ -40,6 +40,7 @@ Pod::Spec.new do |spec|
   # spec.static_framework = true
 
 
+  #第一个配置：处理Include of non-modular header inside framework module ：处理静态库在工程项目中，找不到三方库的问题
   spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
 
 
