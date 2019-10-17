@@ -33,15 +33,15 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"         #支持版本
 
 
-  # spec.source_files         = "#{name}/TKCrashNilSafe.h"
-  # spec.public_header_files  = "#{name}/TKCrashNilSafe.h"
+  spec.source_files         = "#{name}/TKBaseKit.h"
+  spec.public_header_files  = "#{name}/TKBaseKit.h"
 
-  spec.frameworks = "Foundation","UIKit"
+  # spec.frameworks = "Foundation","UIKit"
   # spec.static_framework = true
 
 
   #第一个配置：处理Include of non-modular header inside framework module ：处理静态库在工程项目中，找不到三方库的问题
-  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
+  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", 'OTHER_LDFLAGS' => '-lObjC'}
 
 
   spec.subspec 'TKSDKUniversal' do |ss|
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.framework"
-    ss.frameworks = "Security"
+    # ss.frameworks = "Security"
     ss.dependency 'Masonry'
     ss.dependency 'MJRefresh', '~> 3.2.0'
     ss.dependency 'GTMBase64', '~> 1.0.1'
