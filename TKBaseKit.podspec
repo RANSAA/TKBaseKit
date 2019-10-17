@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
 
 
   #第一个配置：处理Include of non-modular header inside framework module ：处理静态库在工程项目中，找不到三方库的问题
-  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", 'OTHER_LDFLAGS' => '-lObjC'}
+  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"}
 
 
   spec.subspec 'TKSDKUniversal' do |ss|
@@ -51,7 +51,6 @@ Pod::Spec.new do |spec|
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.framework"
-    # ss.frameworks = "Security"
     ss.dependency 'Masonry'
     ss.dependency 'MJRefresh', '~> 3.2.0'
     ss.dependency 'GTMBase64', '~> 1.0.1'

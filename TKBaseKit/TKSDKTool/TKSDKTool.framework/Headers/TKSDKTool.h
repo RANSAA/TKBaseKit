@@ -24,6 +24,8 @@ FOUNDATION_EXPORT const unsigned char TKSDKToolVersionString[];
 
 
 //当前封装的工具类
+#import "TKSDKToolExternalDefines.h"
+#import "TKSDKToolBase.h"
 #import "TKSDKAFNetworkTool.h"
 #import "TKSDKEncryptTool.h"
 #import "TKSDKRefresh.h"
