@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  创建目录
- **/
+ */
 + (void)TKCreateStorageFolder:(NSString *)path;
 
 /**
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  判断path路径是文件，还是目录或者不存在
  return: 0:文件 1：目录 -1：不存在
- **/
+ */
 + (NSInteger)TKCheckPathTypeWith:(NSString *)path;
 
 /** 获取某个字符或汉字的首字母*/
@@ -55,13 +55,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  直接将float格式化2位小数的字符串，直接截取小数点后两位
  与.2f有点区别（即：最后一位的值不会四舍五入）
- **/
+ */
 + (NSString *)TKStringTwoWithFloat:(CGFloat)Float;
 
-/*** 判断字符串是否是数字  */
+/** 判断字符串是否是数字  */
 + (BOOL)TKIsNumberWithString:(NSString *)strValue;
 
-/** html字符串装换 */
+/** html字符串装换为富文本字符串 */
 + (NSAttributedString *)TKHtmlWithText:(NSString *)text;
 
 /** 解析html中的图片地址 **/

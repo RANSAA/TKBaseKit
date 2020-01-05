@@ -10,9 +10,16 @@
 
 @interface TKSDKNavigationController : UINavigationController
 
-/**设置状态栏字体颜色 */
-- (void)setIsStatusBarStyleLightContent:(NSNumber *)isStatusBarStyleLightContent;
-/**设置状态栏隐藏  */
-- (void)setIsStatusBarStyleHidden:(NSNumber *)isStatusBarStyleHidden;
+/**
+ 设置状态栏文字样式
+ 0:默认黑色
+ 1:白色高亮
+ 2:自动
+*/
+- (void)setStatusBarStyleType:(NSNumber *)styleType;
+/**设置状态栏隐藏-竖屏  */
+- (void)setIsStatusBarStyleHidden:(NSNumber *)isHidden;
+/**设置状态栏隐藏-横屏  */
+- (void)setIsStatusBarLandscapeIsHidden:(NSNumber *)isHidden;
 
 @end

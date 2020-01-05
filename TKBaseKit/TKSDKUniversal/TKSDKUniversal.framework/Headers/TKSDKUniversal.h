@@ -20,7 +20,6 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 //定义的一些通用宏
 #import "TKSDKUniversalMacro.h"
 
-
 //扩展
 #import "NSObject+TKSDK.h"
 #import "NSString+TKSDK.h"
@@ -28,6 +27,7 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "UIColor+TKSDK.h"
 #import "UIDevice+TKSDK.h"
 #import "UIView+TKSDK.h"
+#import "UIApplication+TKSDK.h"
 
 //基础通用框架
 #import "TKSDKXibView.h"
@@ -39,9 +39,5 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 
 //通用的一些基础工具类
 #import "TKSDKClearManager.h"
-#import "TKSDKEncryptXORTool.h"
 #import "TKSDKImageTool.h"
-#import "TKSDKLayout.h"
 #import "TKSDKUniversalBundle.h"
-
-

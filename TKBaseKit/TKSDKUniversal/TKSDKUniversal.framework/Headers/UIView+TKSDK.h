@@ -19,7 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 设置view的边框宽度与颜色  */
 -(void)setLayerBorderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth;
-/** 设置view的弧度 */
+/**
+设置UIView的弧度，不会将UIView内部子控件超出区域不会被裁剪掉
+PS:一般只用于UIView控件设置弧度，如UIButton等子控件设置弧度无效
+*/
+-(void)setLayerCornerRadiusViewWith:(CGFloat)radius;
+/**
+设置UIView子控件的弧度，控件内部的子控件超出区域部分也会被裁剪掉！
+同时设置了:masksToBounds = YES
+*/
 -(void)setLayerCornerRadiusWith:(CGFloat)radius;
 /** 设置view的弧度-->值为1.0 */
 -(void)setLayerCornerRadiusWithOne;
