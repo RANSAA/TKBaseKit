@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UIColor *colorFooterStateLabel;
 @property(nonatomic, strong) UIColor *colorHeaderStateLabel;
 
-/** 继承之后该方法必须重写，并且要执行customPublicRefreshStyle 函数 */
+/** 可以直接重写该方法 */
 + (instancetype)shared;
 /**
  获取Bundle指定目录下的所有文件的详细路径路径
