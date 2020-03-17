@@ -29,16 +29,16 @@ NS_ASSUME_NONNULL_BEGIN
  判断path路径是文件，还是目录或者不存在
  return: 0:文件 1：目录 -1：不存在
  */
-+ (NSInteger)TKCheckPathTypeWith:(NSString *)path;
++ (NSInteger)TKGetFilePathTypeWith:(NSString *)path;
 
 /** 获取某个字符或汉字的首字母*/
-+ (NSString *)TKFirstCharactorWithString:(NSString *)string;
++ (NSString *)TKGetFirstCharactorWith:(NSString *)string;
 
 /** 将字符串数组按默认方式排序，并返回 */
-+ (NSArray *)TKDefaultSort:(NSArray<NSString*> *)stringsToSort;
++ (NSArray *)TKDefaultSorted:(NSArray<NSString*> *)stringsToSort;
 
 /** 将字符串数组按默认方式排序，汉字优先排序，并返回 */
-+ (NSArray *)TKLocalSort:(NSArray<NSString*> *)stringsToSort;
++ (NSArray *)TKLocalSorted:(NSArray<NSString*> *)stringsToSort;
 
 /** URL编码 */
 + (NSString *)TKURLEncodedStringWith:(NSString *)str;
@@ -61,11 +61,15 @@ NS_ASSUME_NONNULL_BEGIN
 /** 判断字符串是否是数字  */
 + (BOOL)TKIsNumberWithString:(NSString *)strValue;
 
-/** html字符串装换为富文本字符串 */
-+ (NSAttributedString *)TKHtmlWithText:(NSString *)text;
+/**
+ HTML转富文本
+ */
++ (nullable NSAttributedString *)TKHTMLConverAttrStringWith:(NSString *)htmlString;
 
-/** 解析html中的图片地址 **/
-+ (NSArray *)TKHtmlFilterImagesWithStr:(NSString *)htmlStr;
+/**
+ 解析HTML中的图片地址
+ */
++ (NSArray *)TKHTMLFilterImagesWith:(NSString *)htmlString;
 
 
 /**
@@ -79,6 +83,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)TKGetTextHighOrWideString:(id)str fixed:(CGFloat)fixed type:(NSInteger)type attributes:(nullable NSDictionary *)attr;
 
 
+/**
+ APP版本检测比较(字符串比较) V1>V2 返回YES
+ return YES: 表示可升级
+ */
++ (BOOL)TKUpdateCompareStringWith:(NSString *)v1 fast:(NSString *)v2;
+/**
+ APP版本检测比较(数字比较) V1>V2 返回YES
+ return YES: 表示可升级
+ */
++ (BOOL)TKUpdateCompareFloatWith:(CGFloat)v1 fast:(CGFloat)v2;
 
 
 @end

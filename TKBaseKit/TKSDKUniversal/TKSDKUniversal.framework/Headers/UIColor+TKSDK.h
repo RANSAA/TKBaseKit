@@ -39,6 +39,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)colorWithDecRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 
 
+/**
+ 返回动态UIColor-适配暗夜模式
+ 正常模式下返回lightColor，暗夜模式下返回darkColor
+ 如果：darkColor的值为nil，则暗夜模式下返回darkColor的值为lightColor
+ PS:iOS13.0以下的系统直接返回lightColor （不支持暗夜模式）
+ :https://blog.csdn.net/shifang07/article/details/101307247
+ */
++ (UIColor *)TKLightColor:(nonnull UIColor *)lightColor darkColor:(nullable UIColor *)darkColor;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

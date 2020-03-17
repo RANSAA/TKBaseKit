@@ -8,12 +8,10 @@
 
 #ifndef TKSDKUniversalPch_h
 #define TKSDKUniversalPch_h
-//#import "TKSDKUniversal.h"
 
 /**
  该文件用于定义一些常用的宏
  */
-
 
 
 //BUG字符串是否输出t日志
@@ -36,7 +34,7 @@
 
 
 //多语言对应字符串获取   PS:如果对应的文件名不是InfoPlist,那么不能再里面设置APP的名字等基本属性(如：CFBundleDisplayName),如果要使用那么文件名必须是InfoPlist
-#define TKString(key)       NSLocalizedStringFromTable(key,@"TKSDKInfoPlist", nil)
+#define TKString(key)       NSLocalizedStringFromTable(key,@"TKInfoPlist", nil)
 //获取当前语言
 #define kCurrentLanguage    [[NSLocale preferredLanguages] objectAtIndex:0]
 
@@ -111,9 +109,6 @@
 
 
 
-
-
-
 /** 根据图片名称加载图片 */
 #define kImageName(imageName)       [UIImage imageNamed:imageName]
 /** 根据xibName创建UINib */
@@ -124,7 +119,6 @@
 #define kURL(str)                   [NSURL URLWithString:str]
 /** 根据str创建URL,并且进行URL编码,解决中文问题 */
 #define kURLEncoded(str)            [NSURL URLWithString:[NSString TKURLEncodedStringWith:str]]
-
 
 
 
@@ -151,7 +145,8 @@
 //HEX十六进制颜色（color:支持@“#123456”、 @“0X123456”、 @“123456”三种格式
 #define kHEXColor(color)                    [UIColor colorWithHexString:color]
 #define kHEXColorAndAlpha(color,Alpha)      [UIColor colorWithHexString:color alpha:Alpha]
-
+//ios13动态颜色获取
+#define kDyColor(lightColor,darkColor)      [UIColor TKLightColor:lightColor darkColor:darkColor]
 
 
 
