@@ -52,12 +52,12 @@ Pod::Spec.new do |spec|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.framework"
     ss.dependency 'Masonry'
-    ss.dependency 'GTMBase64'                       #, '~> 1.0.1'
-    ss.dependency 'MJRefresh'                       #, '~> 3.3.1'
-    ss.dependency 'AFNetworking/Serialization'      #, '~> 3.2.1'
-    ss.dependency 'AFNetworking/Security'           #, '~> 3.2.1'
-    ss.dependency 'AFNetworking/Reachability'       #, '~> 3.2.1'
-    ss.dependency 'AFNetworking/NSURLSession'       #, '~> 3.2.1'
+    ss.dependency 'GTMBase64'                       , '~> 1.0.1'
+    ss.dependency 'MJRefresh'                       , '~> 3.3.1'
+    ss.dependency 'AFNetworking/Serialization'      , '~> 3.2.1'
+    ss.dependency 'AFNetworking/Security'           , '~> 3.2.1'
+    ss.dependency 'AFNetworking/Reachability'       , '~> 3.2.1'
+    ss.dependency 'AFNetworking/NSURLSession'       , '~> 3.2.1'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
