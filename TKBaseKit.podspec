@@ -22,19 +22,19 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.0"         #版本
+  spec.version      = "2.1"         #版本
   spec.summary      = "基础导航，网络框架等！"          #简短的描述
   spec.description  = <<-DESC
-  该框架包含两个子框架，它们分别为：
-  1.TKSDKUniversal  基础导航与工具类
-  2.TKSDKTool       二次封装三方库，AFNetworking, MJRefresh,以及引入了一些其它常用的库
+  TKBaseKit通用基础框架，包含：
+  1.TKSDKUniversal  基础框架控制器与一些实用的工具类
+  2.TKSDKTool       二次封装三方库的一些工具
                    DESC
   spec.homepage     = "https://github.com/RANSAA/TKBaseKit"   #github项目首页
   spec.license      = "MIT"     #开源协议方式
   spec.author       = { "sayaDev" => "1352892108@qq.com" }    #作者
   spec.source       = { :git => "https://github.com/RANSAA/TKBaseKit.git", :tag => "v#{spec.version}" } #对应github资源与版本
   spec.requires_arc = true    #支持arc
-  spec.platform     = :ios, "8.0"         #支持版本
+  spec.platform     = :ios, "9.0"         #支持版本
 
 
   spec.source_files         = "#{name}/TKBaseKit.h"
@@ -56,12 +56,17 @@ Pod::Spec.new do |spec|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.framework"
     ss.dependency 'Masonry'
+    ss.dependency 'YYModel'
+    ss.dependency 'MBProgressHUD'
     ss.dependency 'GTMBase64'                       , '~> 1.0.1'
-    ss.dependency 'MJRefresh'                       , '~> 3.3.1'
-    ss.dependency 'AFNetworking/Serialization'      , '~> 3.2.1'
-    ss.dependency 'AFNetworking/Security'           , '~> 3.2.1'
-    ss.dependency 'AFNetworking/Reachability'       , '~> 3.2.1'
-    ss.dependency 'AFNetworking/NSURLSession'       , '~> 3.2.1'
+    ss.dependency 'MJRefresh'                       , '~> 3.4'
+    ss.dependency 'AFNetworking'                    , '~> 4.0.1'
+
+
+    # ss.dependency 'AFNetworking/Serialization'      , '~> 3.2.1'
+    # ss.dependency 'AFNetworking/Security'           , '~> 3.2.1'
+    # ss.dependency 'AFNetworking/Reachability'       , '~> 3.2.1'
+    # ss.dependency 'AFNetworking/NSURLSession'       , '~> 3.2.1'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
