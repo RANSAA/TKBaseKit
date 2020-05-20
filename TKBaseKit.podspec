@@ -22,7 +22,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.1"         #版本
+  spec.version      = "2.1.1"         #版本
   spec.summary      = "基础导航，网络框架等！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
