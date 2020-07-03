@@ -11,12 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (TKSDK)
-/** 设置标题 UIControlStateNormal   */
+/** ⚠️严重警告！请使用setTitleText方法代替*/
 - (void)setTitle:(NSString *)title;
-/** 设置image UIControlStateNormal  */
-- (void)setImage:(UIImage *)image;
-/** 设置字体颜色 UIControlStateNormal */
+/** 设置标题 */
+- (void)setTitleText:(NSString *)title;
+/** 设置字体颜色 */
 - (void)setTitleColor:(UIColor *)color;
+/** 设置image  */
+- (void)setImage:(UIImage *)image;
 @end
 
 NS_ASSUME_NONNULL_END
