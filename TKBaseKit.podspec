@@ -22,7 +22,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.1.2"         #版本
+  spec.version      = "2.1.3"         #版本
   spec.summary      = "基础导航，网络框架等！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -60,13 +60,8 @@ Pod::Spec.new do |spec|
     ss.dependency 'MBProgressHUD'
     ss.dependency 'GTMBase64'                       , '~> 1.0.1'
     ss.dependency 'MJRefresh'                       , '~> 3.4'
-    ss.dependency 'AFNetworking'                    , '~> 4.0.1'
+    ss.dependency 'AFNetworking'                    , '~> 4.0'
 
-
-    # ss.dependency 'AFNetworking/Serialization'      , '~> 3.2.1'
-    # ss.dependency 'AFNetworking/Security'           , '~> 3.2.1'
-    # ss.dependency 'AFNetworking/Reachability'       , '~> 3.2.1'
-    # ss.dependency 'AFNetworking/NSURLSession'       , '~> 3.2.1'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
