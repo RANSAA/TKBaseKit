@@ -88,12 +88,12 @@ PS:
  */
 - (void)setTKEnabledNewView;
 /**
- 是否自动根据TKNavigationBar调整tablView.tap的约束值，默认YES
- */
-@property(nonatomic, assign, setter=setTKAutoUpdateTableViewTopAnchor:) BOOL autoUpdateTableViewTopAnchor;
+是否自动根据TKNavigationBar调整tablView.tap的约束值，默认YES
+*/
+@property(nonatomic, assign) BOOL tableViewAutoUpdateTopAnchor;
 /**
 tableView.topAnchor距离self.view顶部topLayoutGuide.bottom的距离
-有效条件：即需要先设置autoUpdateTableViewTopAnchor的值为NO，才会有效.
+有效条件：即需要先设置tableViewAutoUpdateTopAnchor的值为NO，才会有效.
  */
 @property(nonatomic, assign) CGFloat tableViewTopAnchorConstant;
 /** tableView.leftAnchor距离self.view左边的距离*/

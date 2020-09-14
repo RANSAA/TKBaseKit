@@ -92,12 +92,12 @@ PS:
  */
 - (void)setTKEnabledNewView;
 /**
- 是否自动根据TKNavigationBar调整tablView.tap的约束值，默认YES
- */
-@property(nonatomic, assign, setter=setTKAutoUpdateCollectionViewTopAnchor:) BOOL autoUpdateCollectionViewTopAnchor;
+是否自动根据TKNavigationBar调整tablView.tap的约束值，默认YES
+*/
+@property(nonatomic, assign) BOOL collectionViewAutoUpdateTopAnchor;
 /**
  collectionView.topAnchor距离self.view顶部topLayoutGuide.bottom的距离
- 有效条件：即需要先设置autoUpdateCollectionViewTopAnchor的值为NO，该方法才会有效
+ 有效条件：即需要先设置collectionViewAutoUpdateTopAnchor的值为NO，该方法才会有效
  */
 @property(nonatomic, assign) CGFloat collectionViewTopAnchorConstant;
 /** collectionView.leftAnchor距离self.view左边的距离*/
