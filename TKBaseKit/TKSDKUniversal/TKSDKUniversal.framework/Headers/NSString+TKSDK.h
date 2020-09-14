@@ -74,8 +74,24 @@ PS:位于Library中的子目录中
  */
 + (NSString *)TKStringTwoWithFloat:(CGFloat)Float;
 
-/** 判断字符串是否是数字  */
+/**
+ 判断字符串是否是数字,即整数或者小数
+ 样式：
+    12345  123456.0
+    -123456 -123456.0
+    +123456 +123456.0
+ */
 + (BOOL)TKIsNumberWithString:(NSString *)strValue;
+
+/**
+ 判断字符串是否为整数
+ */
++ (BOOL)TKIsIntWithString:(NSString *)strValue;
+
+/**
+ 判断字符串是否为小数
+ */
++ (BOOL)TKIsFloatWithString:(NSString *)strValue;
 
 /**
  HTML转富文本
