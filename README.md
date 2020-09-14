@@ -23,7 +23,7 @@
 1. CocoaPods方式
 ```
 //全部引入
-pod 'TKBaseKit', '~> 2.1'
+pod 'TKBaseKit', '~> 2.0'
 //模块引入
 pod 'TKBaseKit/TKSDKUniversal'
 pod 'TKBaseKit/TKSDKTool'
