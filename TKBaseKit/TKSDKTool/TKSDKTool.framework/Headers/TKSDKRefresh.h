@@ -31,16 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 可以直接重写该方法 */
 + (instancetype)shared;
-/**
- 获取Bundle指定目录下的所有文件的详细路径路径
- 
- @param bundelName Bundle名
- @param subPath Bundle的子目录，可为空
- @param trgetName Bundle中需要获取的目标文件夹名称可为空
- @return 返回所有排序好了的路径
- 例如：[self loadTKSDKToolBundleWithBundelName:@"TKSDKTool" subPath:@"动图数组" srcName:@"蓝白猫"];
- */
-- (NSArray *)loadTKSDKToolBundleWithBundelName:(NSString *)bundelName subPath:(NSString *)subPath   trgetName:(NSString *)trgetName;
+
 
 #pragma mark -------------------------自定义/重写区域-------------------------
 /**

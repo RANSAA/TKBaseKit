@@ -191,6 +191,11 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
 
 #pragma mark-------------------------定制重写区域-------------------------
 /**
+ 重写，为AFHTTPSessionManager重新定制configuration
+ */
++ (nullable NSURLSessionConfiguration *)customConfiguration;
+
+/**
  定制AFHTTPSessionManager，
  一般用于自定义扩展AF，如HTTPS CA证书的自定义等
  
