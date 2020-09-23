@@ -69,6 +69,8 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
 + (nullable NSString *)getRandomStringUseCharacter;
 /** 直接根据路径获取文件大小 */
 + (long long)getFileSizeAtPath:(nullable NSString *)filePath;
+/** 是否开启log */
++ (void)isEndbledLog:(BOOL)isEndbled;
 /** 是否开启缓存,默认不开启*/
 + (void)isEndbledCache:(BOOL)isEndbled;
 /** 是否开启URLEncode，默认开启 */
