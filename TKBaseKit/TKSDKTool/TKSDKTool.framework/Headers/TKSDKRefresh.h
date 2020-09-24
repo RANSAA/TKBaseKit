@@ -63,14 +63,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray *)getAllFileNameWithBundle:(NSBundle *)bundle dirName:(NSString *)dirName isPath:(BOOL)isPath;
 
 /**
- 获取TKSDKTool.bundle中指定目录中的所有图片名称，与之对应的bundle
- dirName：目录名称，例如：@"动图数组/下拉刷新"
- return:
- {
-    bundle:对应目录所在的bundle
-    images:图片名称数组
- }
- */
+获取TKSDKTool.bundle中指定目录中的所有图片名称，与之对应的bundle。
+dirName：目录名称，例如：@"动图数组/下拉刷新"
+return:
+{
+   bundle:对应目录所在的bundle,类型：NSBundle *
+   images:图片名称数组,类型：NSArray<NSString *> *
+}
+*/
 - (NSDictionary *)getTKSDKToolBundleFileInfoWithDirName:(NSString *)dirName;
 
 /**
