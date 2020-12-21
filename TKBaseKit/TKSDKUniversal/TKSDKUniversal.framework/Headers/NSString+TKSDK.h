@@ -55,21 +55,19 @@ isPath: 是否返回全路径，YES:返回全路径 NO:只返回文件名称
  */
 + (NSInteger)TKGetFilePathTypeWith:(NSString *)path;
 
-/** 获取某个字符或汉字的首字母*/
-+ (NSString *)TKGetFirstCharactorWith:(NSString *)string;
 /**
- 获取字符串拼音的大写首字母
- str:输入的字符串
- firstChar:用于替换字符串拼音首字母不在A-Z区间时，返回的字符
- */
-+ (NSString *)TKGetFirstCharactorWith:(NSString *)str   firstChar:(nullable NSString *)firstChar;
+获取字符串拼音的大写首字母
+str:输入的字符串
+firstChar:用于替换字符串拼音首字母不在A-Z区间时返回的字符,如果为nil,则不替换。
+*/
++ (NSString *)TKGetFirstCharactorWith:(NSString *)str firstChar:(nullable NSString *)firstChar;
 
 /**
- 获取字符串拼音的大写首字母
- str:输入的字符串
- isNum:是否获取数字
- firstChar:用于替换字符串拼音首字母不在A-Z区间时，返回的字符
- */
+获取字符串拼音的大写首字母
+str:输入的字符串
+firstChar:用于替换字符串拼音首字母不在A-Z区间时返回的字符,如果为nil,则不替换。
+isNum:返回首字母是否包含数字区间，并且只有firstChar不为nil才有效
+*/
 + (NSString *)TKGetFirstCharactorWith:(NSString *)str firstChar:(nullable NSString *)firstChar isNum:(BOOL)isNum;
 
 /**
