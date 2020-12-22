@@ -76,6 +76,12 @@ PS:
 
 #pragma mark 新建newView替代默认的self.view处理区域
 /**
+⚠️如果在UIStoryboard中使用，请关闭该功能（重写setTKEnabledNewView方法，进行置空处理），因为在UIStoryboard中设置的属性无法全部转移到tableview上。
+如果关闭该功能，则该区域相应方法无效.
+*/
+
+
+/**
  是否创建了newView用于替换默认的self.view,默认YES
  PS:isEnabledTKNewView的值外部不能修改，只能根据是否重写了setTKEnabledNewView方法修改，如果重写了其值为：NO
  */

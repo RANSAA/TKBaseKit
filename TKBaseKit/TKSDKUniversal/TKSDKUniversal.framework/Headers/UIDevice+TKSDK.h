@@ -13,15 +13,23 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIDevice (TKSDK)
 
 #pragma mark 获取信息区域
+
 /**
- * 获取APP名称
+ 获取APP名称。
+ PS:即获取CFBundleDisplayName的值，如果没有就获取CFBundleName的值
+ */
++ (NSString *)TK_getAppName;
+
+/**
+ * 获取APP的名称
+ * PS:即获取CFBundleName的值
  **/
 + (NSString *)TK_getAppProjectName;
 
 /**
- * 获取APP的显示名称,Xcode11及其之后的版本创建的项目无法获取
- **/
-+ (NSString *)TK_getAppName API_DEPRECATED_WITH_REPLACEMENT("TK_getAppProjectName", ios(2.0, 9.0));
+ 获取APP bundleID
+ */
++ (NSString *)TK_getAppBundleID;
 
 /**
  * 获取APP的包名
@@ -131,21 +139,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)TK_getDefaultLanguage;
 
 /**
- 获取设备类型：是iPhone还是iPad,其它。（不区分是否是模拟器）
- 返回类型：
- 0:未知
- 1:iPhone
- 2:iPad
- 3:iPod touch
- 4:Apple Watch
- 5:iPad mini
- **/
-+ (NSInteger)TK_getDeviceModelType;
-
-/**
-  获取设备类型：是iPhone还是iPad(PS:只区分设备类型，不区分是模拟器，还是真机)
-  return： iPhone 或者 iPad 等
-*/
+ 获取设备类型
+ 返回:iPhone，iPad，iPod touch，Apple Watch，iPad mini等
+ */
 + (NSString *)TK_getDeviceModel;
 
 /**
@@ -180,6 +176,11 @@ NS_ASSUME_NONNULL_BEGIN
  YES:横屏 NO：竖屏
  **/
 + (BOOL)TK_isInterfaceLandscape;
+
+/**
+ 获取当前用户界面方向
+ */
++ (UIInterfaceOrientation)TK_getInterfaceOrientation;
 
 /**
  判断当前设备运行的UI模式是否时iPhone布局
