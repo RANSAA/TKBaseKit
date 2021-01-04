@@ -162,6 +162,15 @@ isNum:返回首字母是否包含数字区间，并且只有firstChar不为nil�
  */
 + (BOOL)TKIsFloatWithString:(NSString *)strValue;
 
+/** 判断是否是文件 */
++ (BOOL)TKIsFileWithPath:(NSString *)path;
+
+/** 判断是否是目录*/
++ (BOOL)TKIsDirWithPath:(NSString *)path;
+
+/** 判断是否是文件或者目录 */
++ (BOOL)TKIsFileOrDirWithPath:(NSString *)path;
+
 /**
  HTML转富文本
  */
