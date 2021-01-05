@@ -15,12 +15,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIApplication (TKSDK)
 
 /**
- xcode11创建项目时，获取keyWindow（PS:原[UIApplication sharedApplication].keyWindow 获取失效）
- 如果需要实现iPad多屏处理，最好是使用SceneDelegate管理Window
- PS:该方法遍历[UIApplication sharedApplication]windows，返回keyWindow；
-    如果没有找到返回firstObject;如果都没有则返回null
+获取keyWindow,适配iOS13.0+
+PS:如果需要实现iPad多屏处理，最好是使用SceneDelegate管理Window
+*/
++ (UIWindow*)TK_keyWindow;
+
+/**
+ 获取当前显示的视图控制器
  */
-+ (nullable UIWindow*)TK_keyWindow;
++ (UIViewController *)TK_getCurrentController;
+
 
 @end
 
