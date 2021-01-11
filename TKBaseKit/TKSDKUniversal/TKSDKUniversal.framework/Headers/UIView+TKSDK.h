@@ -57,6 +57,13 @@ PS:注意与controllerFromController的区别
 */
 - (nullable UIViewController *)controllerFromChildController;
 
+#pragma mark 约束
+/**
+向view添加相对于toView的四边都对齐的约束，并返回。
+return:返回四边的约束NSLayoutConstraint，顺序为top,left,Bottom,right
+*/
+- (NSArray<NSLayoutConstraint *>*)addEdgeConstraintsToView:(UIView *)toView API_AVAILABLE(ios(9.0));
+
 @end
 
 NS_ASSUME_NONNULL_END
