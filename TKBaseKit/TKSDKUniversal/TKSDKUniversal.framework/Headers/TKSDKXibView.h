@@ -25,10 +25,10 @@
 /** TKSDKXibView的第一级子控件的颜色 */
 @property(nonatomic, strong) UIColor *xibChildViewColor;
 
-/**
- 重写该方法，可从指定bundle中加载xib
- */
-- (NSBundle *)retrunBundle;
+/** 重写该方法，可从指定bundle中加载xib */
+- (NSBundle *)returnBundle;
+/** 重写该方法可以加载指定xib文件 */
+- (NSString *)returnXibName;
 
 /**  view setupUI 之后可在该方法中进行对其子控件的一些操作*/
 - (void)instanceSubView;
