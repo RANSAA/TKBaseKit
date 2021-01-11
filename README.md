@@ -19,7 +19,6 @@
 
 ## 注意：
 ##   1.至少使用2.1即以上的版本。
-##   2.该框架是静态库，使用内部bundle资源时，其bundle应该位于maimBundle中，而不是在framework中。
 
 ## 使用说明
 1. CocoaPods方式
