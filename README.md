@@ -26,9 +26,9 @@ pod 'TKBaseKit/TKSDKTool'
       pod 'Masonry'
       pod 'YYModel'
       pod 'MBProgressHUD'
-      pod 'GTMBase64'                     
-      pod 'MJRefresh'        #, '~> 3.5.0'
-      pod 'AFNetworking'     #, '~> 4.0'
+      pod 'GTMBase64'        , '~> 1.0.1'             
+      pod 'MJRefresh'        , '~> 3.5.0'
+      pod 'AFNetworking'     , '~> 4.0'
 
      **注意：三方依赖库也会持续的更新**
      

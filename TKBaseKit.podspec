@@ -58,8 +58,8 @@ Pod::Spec.new do |spec|
     ss.dependency 'Masonry'
     ss.dependency 'YYModel'
     ss.dependency 'MBProgressHUD'
-    ss.dependency 'MJRefresh'                       #, '~> 3.4'
     ss.dependency 'GTMBase64'                       , '~> 1.0.1'
+    ss.dependency 'MJRefresh'                       , '~> 3.5'
     ss.dependency 'AFNetworking'                    , '~> 4.0'
 
   end
