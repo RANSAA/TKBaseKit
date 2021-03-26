@@ -42,5 +42,5 @@ pod 'TKBaseKit/TKSDKTool'
 ```
 [self makeNavigationBarOnTop]; 
 ```
-2.其它操作请查看文件注释。
+2.其它操作请查看文件注释。\
 3.iphoneos_maccatalyst中的可以用于iPhone与Mac模式运行
