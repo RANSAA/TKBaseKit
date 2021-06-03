@@ -22,7 +22,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.1.5"         #版本
+  spec.version      = "2.1.6"         #版本
   spec.summary      = "基础通用框架，以及一些工具和一些三方框架的二次封装！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -44,8 +44,12 @@ Pod::Spec.new do |spec|
   # spec.static_framework = true
 
 
-  #第一个配置：处理Include of non-modular header inside framework module ：处理静态库在工程项目中，找不到三方库的问题
-  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"}
+  # 处理Include of non-modular header inside framework module ：处理静态库在工程项目中，找不到三方库的问题
+  # 说明：
+  # "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"  ：处理静态库在工程项目中，找不到三方库的问题
+  # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'                 : 排除模拟生成arm64， Xcode12会在模拟器模式下生成arm64架构
+  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+
 
 
   spec.subspec 'TKSDKUniversal' do |ss|
@@ -59,7 +63,7 @@ Pod::Spec.new do |spec|
     ss.dependency 'YYModel'
     ss.dependency 'MBProgressHUD'
     ss.dependency 'GTMBase64'                       , '~> 1.0.1'
-    ss.dependency 'MJRefresh'                       , '~> 3.5'
+    ss.dependency 'MJRefresh'                       , '~> 3.6'
     ss.dependency 'AFNetworking'                    , '~> 4.0'
 
   end
