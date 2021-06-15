@@ -17,7 +17,8 @@ FOUNDATION_EXPORT const unsigned char TKSDKToolVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <TKSDKTool/PublicHeader.h>
 
 
-#import "TKSDKToolExternalDefines.h"
+#import "TKSDKTooImportSDK.h"
+
 #import "TKSDKToolBase.h"
 #import "TKSDKAFNetworkTool.h"
 #import "TKSDKEncryptTool.h"

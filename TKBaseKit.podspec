@@ -37,7 +37,8 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"         #支持版本
   # spec.ios.deployment_target = '9.0'
   # spec.osx.deployment_target = '10.10'
-  spec.static_framework = true  #静态库
+
+  # spec.static_framework = true  #静态库，如果该pod中依赖了静态库，需要将该属性设置为true
 
 
 

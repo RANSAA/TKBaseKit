@@ -39,8 +39,9 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "TKSDKCollectionViewController.h"
 #import "TKSDKListViewController.h"
 #import "TKSDKGridViewController.h"
+#import "TKFPSLabel.h"
+
 
 
 //通用的一些基础工具类
 #import "TKSDKClearManager.h"
-#import "TKSDKUniversalBundle.h"

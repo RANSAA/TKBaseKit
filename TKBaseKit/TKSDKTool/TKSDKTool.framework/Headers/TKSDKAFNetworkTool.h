@@ -44,7 +44,7 @@
 //版本V2.0
 
 #import <Foundation/Foundation.h>
-#import "TKSDKToolExternalDefines.h"
+#import "TKSDKTooImportSDK.h"
 
 
 

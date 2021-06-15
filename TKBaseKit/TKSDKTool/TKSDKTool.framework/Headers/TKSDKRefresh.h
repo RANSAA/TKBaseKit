@@ -21,7 +21,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "TKSDKToolExternalDefines.h"
+#import "TKSDKTooImportSDK.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
