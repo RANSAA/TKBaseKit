@@ -8,7 +8,7 @@
 
 /**
  功能说明：自定义NavigationBar+UITableView
- 实现方式：在ViewController中添加一个UITableView来实现与TKSDKTableViewController相同的功能。
+ 实现方式：在TKSDKViewController中添加一个UITableView来实现与TKSDKTableViewController相似的功能。
  区别说明：
         TKSDKListViewController：继承TKSDKViewController并在其中添加一个UITableView。
         TKSDKTableViewController：继承UITableViewController。
@@ -23,14 +23,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TKSDKListViewController : TKSDKViewController <UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
-/** tableView.leftAnchor距离self.view左边的距离*/
-@property(nonatomic, assign) CGFloat tableViewLeftAnchorConstant;
-/** tableView.rightAnchor距离self.view右边的距离*/
-@property(nonatomic, assign) CGFloat tableViewRightAnchorConstant;
-/** tableView.topAnchor距离self.view顶部topLayoutGuide.bottom的距离*/
+
+/**
+ 是否根据TKNavigationBar的高度自动调整tableView.topAnchor的约束值， Default:YES
+ */
+@property(nonatomic, assign) BOOL autoUpdateTableViewTopAnchor;
+/**
+ ⚠️:设置tableView.topAnchor距离self.topLayoutGuide.bottom的constant值
+ ⚠️:需要先将autoUpdateTableViewTopAnchor的值设置为NO，该方法才会有效。
+ */
 @property(nonatomic, assign) CGFloat tableViewTopAnchorConstant;
-/** tableView.bottomAnchor距离self.view底部bottomLayoutGuide.bottom的距离*/
+/**
+ tableView.leftAnchor距离self.view.leftAnchor的constant值
+ */
+@property(nonatomic, assign) CGFloat tableViewLeftAnchorConstant;
+/**
+ tableView.rightAnchor距离self.view.rightAnchor的constant值
+ */
+@property(nonatomic, assign) CGFloat tableViewRightAnchorConstant;
+/**
+ tableView.bottomAnchor距离self.view.bottomAnchor的constant值
+ */
 @property(nonatomic, assign) CGFloat tableViewBottomAnchorConstant;
+
 
 /**
  初始化

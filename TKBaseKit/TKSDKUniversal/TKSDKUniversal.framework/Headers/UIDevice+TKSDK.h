@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 获取信息区域
 
+
+
 /**
  获取APP名称。
  PS:即获取CFBundleDisplayName的值，如果没有就获取CFBundleName的值
@@ -50,6 +52,19 @@ NS_ASSUME_NONNULL_BEGIN
  * 获取设备的唯一标识号 UUID
  **/
 + (NSString *)TK_getUUID;
+
+/** 获取infoDictionary  */
++ (NSDictionary *)TK_infoPlist;
+
+/**
+ 读取info.plist文件中的UIStatusBarStyle信息
+ */
++ (UIStatusBarStyle)TK_getInfoPlistStatusBarStyle;
+
+/**
+ 读取info.plist文件中的UIStatusBarHidden信息
+ */
++ (BOOL)TK_getInfoPlistStatusBarHidden;
 
 /**
   获取设备的状态栏的高度(返回的是没有隐藏状态栏的时的高度，主要是用于适配留海相关)
@@ -153,8 +168,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
   获取设备的具体型号如iPhone5s,iPhone6s等(PS:如果是模拟器会直接返回Simulator)
-  已经更新到 iPhone x
-  time: 2019-12-25
+  已经更新到 iPhone 12 Pro Max
+  time: 2021-6-17
   ps:只有iPhone的类型是全的，其它的如果需要，直接到下列网址中w去添加
   https://www.theiphonewiki.com/wiki/Models
 */
