@@ -74,6 +74,23 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)TKPBKDF2Key:(NSString*)key salt:(NSString *)salt;
 
+
+
+#pragma mark 异或加密/解密
+/** NSData异或操作  */
++ (NSData *)TKXORWithData:(NSData *)inputData key:(NSData *)keyData;
+/**
+ 字符串异或加密(支持中文)
+ */
++ (NSString *)TKEncryptUseXOR:(NSString *)plainText key:(NSString *)key;
+/**
+ 字符串异或解密(支持中文)
+ */
++ (NSString *)TKDecryptUseXOR:(NSString *)plaintext key:(NSString *)key;
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

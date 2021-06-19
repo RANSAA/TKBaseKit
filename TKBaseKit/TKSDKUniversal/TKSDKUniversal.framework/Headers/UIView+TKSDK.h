@@ -45,14 +45,14 @@ PS:一般只用于UIView控件设置弧度，如UIButton等子控件设置弧度
 
 /**
 功能：获取view当前所在的Controller控制器。
-如果是childViewController的view，并且将view作为subView添加到ViewControler.view中,那么获取到的控制器依然是作为主控制器的ViewControler
+如果是childViewController的view，并且将view作为subView添加到ViewControler.view中,那么获取到的控制器依然是"作为主控制器的ViewControler"
 PS:注意与controllerFromChildController的区别
  */
 - (nullable UIViewController *)controllerFromController;
 
 /**
 功能：获取view当前所在的Controller控制器。
-如果是childViewController的view，并且将view作为subView添加到ViewControler.view中,那么获取到的控制器将会是作为子控制器的childViewController。
+如果是childViewController的view，并且将view作为subView添加到ViewControler.view中,那么获取到的控制器将会是"作为子控制器的childViewController"。
 PS:注意与controllerFromController的区别
 */
 - (nullable UIViewController *)controllerFromChildController;

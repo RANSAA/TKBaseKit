@@ -125,18 +125,6 @@ isNum:返回首字母是否包含数字区间，并且只有firstChar不为nil�
 + (NSString *)TKBase64DecoderStringWith:(NSString *)str;
 
 
-///** URL编码 */
-//+ (NSString *)TKURLEncodedStringWith:(NSString *)str;
-//
-///** URL解码 */
-//+ (NSString *)TKURLDecodedStringWith:(NSString *)str;
-
-///** base64 编码URLSafe模式*/
-//+ (NSString *)TKBase64EncodedStringWith:(NSString *)string;
-//
-///** base64 解码*/
-//+ (NSString *)TKBase64DecodedStringWith:(NSString *)base64String;
-
 /**
  直接将float格式化2位小数的字符串，直接截取小数点后两位
  与.2f有点区别（即：最后一位的值不会四舍五入）

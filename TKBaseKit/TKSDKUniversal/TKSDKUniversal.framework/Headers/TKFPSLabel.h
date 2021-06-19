@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)show;
 
-/**销毁CADisplayLink， 使用initWithXX创建时需要手动销毁CADisplayLink。 */
+/**销毁CADisplayLink， 如果使用initWithXX创建时需要手动销毁CADisplayLink。 */
 - (void)invalidate;
 
 @end
