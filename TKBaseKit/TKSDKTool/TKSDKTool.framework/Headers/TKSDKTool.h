@@ -21,5 +21,8 @@ FOUNDATION_EXPORT const unsigned char TKSDKToolVersionString[];
 
 #import "TKSDKToolBase.h"
 #import "TKSDKAFNetworkTool.h"
+#import "TKSDKAFNetworkConfig.h"
 #import "TKSDKEncryptTool.h"
 #import "TKSDKRefresh.h"
+
+
