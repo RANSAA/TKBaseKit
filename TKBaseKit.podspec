@@ -13,16 +13,10 @@
 
 name = "TKBaseKit"
 
-# file_source       = "*.{h,m}"
-# file_header       = "*.h"
-# public_source     = "#{name}/NSObject/NSObject+CrashNilSafe.{h,m}"
-# public_header     = "#{name}/NSObject/NSObject+CrashNilSafe.h"
-# public_base       = "#{name}/NSObject"
-
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.1.8"         #版本
+  spec.version      = "2.1.9"         #版本
   spec.summary      = "基础通用框架，以及一些工具和一些三方框架的二次封装！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -36,8 +30,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true    #支持arc
   spec.platform     = :ios, "9.0"         #支持版本
   # spec.ios.deployment_target = '9.0'
-  # spec.osx.deployment_target = '10.10'
-
+  # spec.osx.deployment_target = '10.15'
+  
   # spec.static_framework = true  #静态库，如果该pod中依赖了静态库，需要将该属性设置为true
 
 
@@ -47,7 +41,12 @@ Pod::Spec.new do |spec|
   # 说明：
   # "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"  ：处理静态库在工程项目中，找不到三方库的问题
   # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'                 : 排除模拟生成arm64， Xcode12会在模拟器模式下生成arm64架构
-  spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  # spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  spec.xcconfig = { 
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES",
+    'OTHER_LDFLAGS' => '-ObjC',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
+  }
 
 
 
@@ -59,12 +58,12 @@ Pod::Spec.new do |spec|
 
 
   spec.subspec 'TKSDKUniversal' do |ss|
-    ss.vendored_frameworks  = "#{name}/TKSDKUniversal/TKSDKUniversal.framework"
+    ss.vendored_frameworks  = "#{name}/TKSDKUniversal/TKSDKUniversal.xcframework"
   end
 
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
-    ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.framework"
+    ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.xcframework"
     ss.dependency 'Masonry'
     ss.dependency 'YYModel'
     ss.dependency 'MBProgressHUD'

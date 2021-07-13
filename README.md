@@ -1,5 +1,9 @@
 ## TKBaseKit
 
+<br>
+
+
+### 警告： 2.1.9即以后的版本使用了XCFramework构建，需要Xcode11+才能支持；如果使用低于Xcode11版本，可以直接在.xcframework文件中找到指定架构版本使用即可。
 
 <br>
 
@@ -14,7 +18,7 @@
 1.CocoaPods方式
 ```
 //全部引入
-pod 'TKBaseKit', '2.1.7'    
+pod 'TKBaseKit', '2.1.9'    
 
 使用：直接导入下列头文件即可：
 #import <TKBaseKit.h>
