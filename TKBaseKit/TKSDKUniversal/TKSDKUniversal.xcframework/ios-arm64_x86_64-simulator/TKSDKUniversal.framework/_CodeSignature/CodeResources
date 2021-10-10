@@ -12,9 +12,17 @@
 		<data>
 		M0y+J/2OBa2YB//x2fEe/kIeXj0=
 		</data>
+		<key>Headers/TKDecimalTool.h</key>
+		<data>
+		NnQjsxhfDmKVn3M5WZmLIgz2uCY=
+		</data>
 		<key>Headers/TKFPSLabel.h</key>
 		<data>
 		HpHGQ1K2xV87ZWZckmDQrZ5WB8Y=
+		</data>
+		<key>Headers/TKLinkTextView.h</key>
+		<data>
+		t3SaAfSHeAp4BHetopsMLsI4y7k=
 		</data>
 		<key>Headers/TKSDKClearManager.h</key>
 		<data>
@@ -46,7 +54,7 @@
 		</data>
 		<key>Headers/TKSDKUniversal.h</key>
 		<data>
-		9jOMMcl1VKC18dDcpvWdw6SU3JU=
+		wg1qNZpxadeUXtcSK1J3+Elpr0E=
 		</data>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<data>
@@ -86,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ruc+1+LmljuE84SfHYmVs6/5fbQ=
+		7sIrEaLYE9JL4Nm2Nmufsdzu2gw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -117,6 +125,17 @@
 			qDhZ8igr+GscpvwTozQ6LEPS4zBFO/OnyMgCUGNhBFQ=
 			</data>
 		</dict>
+		<key>Headers/TKDecimalTool.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NnQjsxhfDmKVn3M5WZmLIgz2uCY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Gytxxl4B1+kKgEADfeY85OVzCJTDV65/PJNrn1hLTZc=
+			</data>
+		</dict>
 		<key>Headers/TKFPSLabel.h</key>
 		<dict>
 			<key>hash</key>
@@ -126,6 +145,17 @@
 			<key>hash2</key>
 			<data>
 			EWieDEPKS3aL5Pgb/angJgapRHdxl9u/d1mcIkgadxI=
+			</data>
+		</dict>
+		<key>Headers/TKLinkTextView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t3SaAfSHeAp4BHetopsMLsI4y7k=
+			</data>
+			<key>hash2</key>
+			<data>
+			1L0X3GeYAxoNtP12aOdnay9DQG0Qnq++CN+JpQusTbM=
 			</data>
 		</dict>
 		<key>Headers/TKSDKClearManager.h</key>
@@ -209,11 +239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jOMMcl1VKC18dDcpvWdw6SU3JU=
+			wg1qNZpxadeUXtcSK1J3+Elpr0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			E8xAmr8pJm5YxXoOePUxhZHyT0XrJ7Dj8sGwYeCGUeM=
+			FpNvw3z9cQPL7d78WXp5n4oLMKpNZWlDBs8ZIXfKZdU=
 			</data>
 		</dict>
 		<key>Headers/TKSDKUniversalMacro.h</key>
