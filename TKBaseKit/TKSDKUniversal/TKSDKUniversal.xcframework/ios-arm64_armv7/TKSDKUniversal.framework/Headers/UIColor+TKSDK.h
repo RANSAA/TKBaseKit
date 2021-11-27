@@ -38,6 +38,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIColor *)colorWithDecRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 
+/**
+ 创建一个随机颜色
+ */
++ (UIColor *)colorRandom;
 
 /**
  返回动态UIColor-适配暗夜模式

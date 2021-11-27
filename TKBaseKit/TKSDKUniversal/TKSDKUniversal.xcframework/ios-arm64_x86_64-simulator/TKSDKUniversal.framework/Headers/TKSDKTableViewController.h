@@ -88,7 +88,7 @@ NS_ASSUME_NONNULL_BEGIN
  功能：创建一个新的视图"selfView"用于替换controller中的self.view(对应tableView),并将tableView添加到selfView上面。
  约束：tableView的左右下与selfView的左右下关联；self.tableView.topAnchor是与self.topLayoutGuide.bottom相关联的。
  开关：只需要将该方法重写并置空，即可关闭与selfView相关的操作，默认开启。
- 注意：如果重置该方法，就不会创建TKNavigationBar。
+ 注意：如果重置该方法，就不会创建selfView,与其相关的操作都会失效。
  */
 - (void)setTKEnabledSelfView;
 /**

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TKSDKAFNetworkTool.h</key>
 		<data>
-		4xWiCzXLCnyXIRHzeazXh1A5+f4=
+		B1XyBypu2KF3MBkCLBR3tr53IK0=
 		</data>
 		<key>Headers/TKSDKEncryptTool.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/TKSDKRefresh.h</key>
 		<data>
-		DEB4P/UjEEdjy7rafdDvheuQOY8=
+		20g/bQqz44lf9hVU70oDoyVAPw0=
 		</data>
 		<key>Headers/TKSDKTooImportSDK.h</key>
 		<data>
-		bxNFuQIf718z7Acz1c+OTm9DtVo=
+		lxsx+hX2zXmdMz9I2dxunN3Hnos=
 		</data>
 		<key>Headers/TKSDKTool.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2kFVhYvWrKV1nVEVih4edJJ69Nw=
+		QOq/Z1XFcc2+MW+utD6BA5jUloQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -634,11 +634,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4xWiCzXLCnyXIRHzeazXh1A5+f4=
+			B1XyBypu2KF3MBkCLBR3tr53IK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9tqQwLHIjOVbfMYemZJ9PGlJaqcsa+3Mv7FRAPCrI3A=
+			lRa7S6Ghl0KNLio0cmg1ZSFkP8RRgi8M20hcGPdMRSY=
 			</data>
 		</dict>
 		<key>Headers/TKSDKEncryptTool.h</key>
@@ -656,22 +656,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DEB4P/UjEEdjy7rafdDvheuQOY8=
+			20g/bQqz44lf9hVU70oDoyVAPw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			V3w7LHG9RI7WOw8VNYXihTXuwlekTjjYOl1PJUYnnkE=
+			4+34tcx82XiECtmM8FSfIRhnNqBPUjgRr/lsLtEDTsM=
 			</data>
 		</dict>
 		<key>Headers/TKSDKTooImportSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bxNFuQIf718z7Acz1c+OTm9DtVo=
+			lxsx+hX2zXmdMz9I2dxunN3Hnos=
 			</data>
 			<key>hash2</key>
 			<data>
-			8tqB8Jx830cMT62h1z7BianmLVW/s6Zswnh2QGSj+mM=
+			bduWj5mTUapVlcrt5ENY1HTA8Kx2VyDw92IC4Vd+HG8=
 			</data>
 		</dict>
 		<key>Headers/TKSDKTool.h</key>

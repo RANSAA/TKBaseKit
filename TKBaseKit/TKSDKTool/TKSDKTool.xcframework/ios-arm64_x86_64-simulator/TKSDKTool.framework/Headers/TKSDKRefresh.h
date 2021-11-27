@@ -26,6 +26,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface TKSDKRefresh : NSObject
 /** 下拉刷新的三个提示状态文字 **/
 @property(nonatomic, copy) NSString *tipHeaderStateIdle;
@@ -45,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
-#pragma mark 资源获取
+#pragma mark 资源获取--如果图片资源过多，可以在App启后先执行加载资源的方法(会有缓存)
 
 /**
  根据bundle中的文件名称创建bundle
@@ -129,8 +131,12 @@ return:
 
 
 #pragma mark 刷新状态控制区域
+/** 开始刷新header */
+- (void)beginHeaderWith:(UIScrollView *)scrollView;
 /** 结束刷新header */
 - (void)stopHeaderWith:(UIScrollView *)scrollView;
+/** 开始刷新footer */
+- (void)beginFooterWith:(UIScrollView *)scrollView;
 /** 结束刷新footer */
 - (void)stopFooterWith:(UIScrollView *)scrollView;
 /** 隐藏或者显示footer

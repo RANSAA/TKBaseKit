@@ -214,14 +214,14 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
  ps：https://www.cnblogs.com/jyking/p/6737295.html
  ps:https://blog.csdn.net/dongruanlong/article/details/72641754
  */
-+ (void)customSessionManager:(nullable AFHTTPSessionManager *)sessionManager;
++ (void)customSessionManager:(nonnull AFHTTPSessionManager *)sessionManager;
 
 /**
  重写，可以在requestSerializer中添加通用header参数
  @param requestSerializer 向header中添加一些v标识
  通过AFHTTPRequestSerializer添加header参数
  */
-+ (void)customPublicHeaderWith:(nullable AFHTTPRequestSerializer*)requestSerializer;
++ (void)customPublicHeaderWith:(nonnull AFHTTPRequestSerializer*)requestSerializer;
 
 /**
  重写，为URL请求添加header请求参数
@@ -237,35 +237,28 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
  @param responseType 响应方式
  @return 针对URL进行特殊处理，如添加域名，针对特殊URL进行处理
  */
-+ (nonnull NSString *)customRequestURL:(nullable NSString *)url requestType:(TKSDKNetRequestType)requestType responseType:(TKSDKNetResponseType)responseType;
++ (nonnull NSString *)customRequestURL:(nonnull NSString *)url requestType:(TKSDKNetRequestType)requestType responseType:(TKSDKNetResponseType)responseType;
 
-/**
- 重写，参数二次解析封装处理
- @param par 请求传入默认参数
- @return 返回额为处理的参数；如添加一些公共参数
- :重写该方法时，注意par为null的情况
- */
-+ (nullable id)customRequestMutablePar:(nullable id)par;
+/// 重写，参数二次解析封装处理
+/// @param par 请求传入默认参数
+/// @param url 请求传入url
+/// @return 返回额为处理的参数；如添加一些公共参数
+/// PS:重写该方法时，注意par为null的情况
++ (nullable id)customRequestMutablePar:(nullable id)par url:(nonnull NSString *)url;
 
-/**
- ⚠️:请使用customResponseDataWithSuccess:requestType:responseType:方法。
- 重写，可以对响应数据二次处理，如筛选某些特定通用数据等，注意最终返回的数据类型是不会改变的
- */
-+ (void)customResponseDataWithSuccess:(nullable id)responseObject responseType:(TKSDKNetResponseType)responseType TKSDKToolDeprecated("请使用customResponseDataWithSuccess:requestType:responseType:方法。");
 
-/// 重写，可以对响应数据二次处理，如筛选某些特定通用数据等，注意最终返回的数据类型是不会改变的
+/// 重写该方法，可以对响应数据二次处理，如筛选某些特定通用数据等，注意最终返回的数据类型是不会改变的
 /// @param responseObject 请求成功时响应的数据(类型：NSData)
-/// @param requestType  请求类型
+/// @param requestType 请求类型
 /// @param responseType 响应数据的类型
-+ (void)customResponseDataWithSuccess:(nullable id)responseObject requestType:(TKSDKNetRequestType)requestType responseType:(TKSDKNetResponseType)responseType;
+/// @param url 请求url
++ (void)customResponseDataWithSuccess:(nullable id)responseObject requestType:(TKSDKNetRequestType)requestType responseType:(TKSDKNetResponseType)responseType url:(nonnull NSString *)url;
 
 
-
-/**
- 重写，可以对请求错误信息Error的二次处理
- @param error 响应错误
- */
-+ (void)customResponseError:(nullable NSError *)error;
+/// 重写该方法，可以先对请求错误信息Error的二次处理
+/// @param error 响应错误信息
+/// @param url 请求url
++ (void)customResponseError:(nullable NSError *)error url:(nonnull NSString *)url;
 
 
 
