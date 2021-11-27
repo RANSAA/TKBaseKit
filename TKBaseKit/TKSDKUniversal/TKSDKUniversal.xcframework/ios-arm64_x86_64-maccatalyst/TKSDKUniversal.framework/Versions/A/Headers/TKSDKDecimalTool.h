@@ -1,5 +1,5 @@
 //
-//  TKDecimalTool.h
+//  TKSDKDecimalTool.h
 //  testText
 //
 //  Created by PC on 2021/10/3.
@@ -16,6 +16,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,12 +28,17 @@ NS_ASSUME_NONNULL_BEGIN
 #define kDecToOtherSmallPrecision 0.0
 
 
-@interface TKDecimalTool : NSObject
+@interface TKSDKDecimalTool : NSObject
 
-//普通字符串转换成16进制字符串
+#pragma mark 十六进制与字符串互转
+
+
+/// 普通字符串转换成16进制字符串
+/// @param string 输入的普通字符串
 + (NSString *)hexStringFromString:(nonnull NSString *)string;
 
-//16进制字符串转换成普通字符串
+/// 16进制字符串转换成普通字符串
+/// @param hexString 输入的16进制字符串
 + (NSString *)stringFromHexString:(nonnull NSString *)hexString;
 
 
