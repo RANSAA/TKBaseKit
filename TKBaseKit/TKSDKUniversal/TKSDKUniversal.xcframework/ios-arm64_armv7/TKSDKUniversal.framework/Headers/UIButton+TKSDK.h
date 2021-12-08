@@ -25,7 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 设置标题 */
 - (void)setTitleText:(NSString *)title;
 
-
 /** 设置字体颜色 */
 - (void)setTitleColor:(UIColor *)color;
 /** 设置image  */

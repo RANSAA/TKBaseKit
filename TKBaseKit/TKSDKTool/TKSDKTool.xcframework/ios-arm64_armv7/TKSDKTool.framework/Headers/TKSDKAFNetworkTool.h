@@ -199,9 +199,12 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
 
 #pragma mark-------------------------定制重写区域-------------------------
 /**
- 重写，为AFHTTPSessionManager重新定制configuration
+ 重写：为AFHTTPSessionManager重新定制configuration
+ 注意：
+    返回null，则使用[AFHTTPSessionManager manager]创建对象；
+    返回不为null，使用[[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration]创建对象
  */
-+ (nonnull NSURLSessionConfiguration *)customConfiguration;
++ (nullable NSURLSessionConfiguration *)customConfiguration;
 
 /**
  重写，定制AFHTTPSessionManager，

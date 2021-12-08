@@ -72,13 +72,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage*)TKCreateCircularRingWithColor:(UIColor*)color radius:(CGFloat)radius  width:(CGFloat)width alpha:(CGFloat)alpha;
 
+
 /**
  功能：根据颜色数组创建等宽度的同心圆
  colors:颜色数组
  radius:圆的半径
  alpha：透明度
+ fromCenter:是否是从圆心向外绘制
  */
-+ (UIImage *)TKCreateConcentricCirclesWithColors:(NSArray <UIColor*> *)colors radius:(CGFloat)radius alpha:(CGFloat)alpha;
++ (UIImage *)TKCreateConcentricCirclesWithColors:(NSArray <UIColor*> *)colors radius:(CGFloat)radius alpha:(CGFloat)alpha fromCenter:(BOOL)fromCenter;
 
 /**
  功能：根据图片数组与对应的比例数组创建同心圆环，每个圆环的宽度由proportions决定
@@ -86,9 +88,10 @@ NS_ASSUME_NONNULL_BEGIN
  proportions:每一个圆环宽度占比数组,每个item的值必须大于等于0
  radius:圆的半径
  alpha：透明度
+ fromCenter:是否是从圆心向外绘制
  注意：colors.count == proportions.count
  */
-+ (UIImage *)TKCreateConcentricCirclesWithColors:(NSArray <UIColor*> *)colors  proportions:(NSArray<NSNumber *> *)proportions radius:(CGFloat)radius alpha:(CGFloat)alpha;
++ (nullable UIImage *)TKCreateConcentricCirclesWithColors:(NSArray <UIColor*> *)colors  proportions:(NSArray<NSNumber *> *)proportions radius:(CGFloat)radius alpha:(CGFloat)alpha fromCenter:(BOOL)fromCenter;
 
 /**
  UIImage 转 Base64字符串
