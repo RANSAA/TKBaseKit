@@ -14,6 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (TKSDK)
 
+/**
+ 功能：可以传递多个参数的performSelector方法
+ @param selector 调用的方法，注意selector中的基础类型需要包装成类类型
+ @param objects 参数数组
+ 警告: 1.不支持返回类型为struct的方法调用。2.将返回值类型为基础数据类型的值，包装成了NSNumber类型。
+ */
+- (id)performSelector:(SEL)selector withObjects:(nullable NSArray *)objects;
++ (id)performSelector:(SEL)selector withObjects:(nullable NSArray *)objects;
+
 @end
 
 NS_ASSUME_NONNULL_END
