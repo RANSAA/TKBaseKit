@@ -173,13 +173,13 @@ isNum:返回首字母是否包含数字区间，并且只有firstChar不为nil�
 
 /**
  计算字符串的高度或者宽度
- @param str 字符串类型为：NSString，NSAttributedString等
+ @param string 字符串类型为：NSString，NSAttributedString等
  @param fixed 需要固定的的值(计算高度就要固定宽度的值，反之亦然)
  @param type 0:计算字符串的高度 1：计算字符串的宽度
- @param attr str为NSString类型时，字符串的属性，如字体大小，类型等！
+ @param attr string为NSString类型时，字符串的属性，如字体大小，类型等！
  @return 返回字符串的高度或者宽度
  */
-+ (CGFloat)TKGetTextHighOrWideString:(id)str fixed:(CGFloat)fixed type:(NSInteger)type attributes:(nullable NSDictionary *)attr;
++ (CGFloat)TKGetTextHighOrWideString:(id)string fixed:(CGFloat)fixed type:(NSInteger)type attributes:(nullable NSDictionary *)attr;
 
 
 /**

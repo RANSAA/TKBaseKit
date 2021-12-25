@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/NSObject+TKSDK.h</key>
 		<data>
-		TFFUA4+zTT2YmuoSI3zSeNrmNVc=
+		k1fkBi6UQVeShgv20/i1v5L/tPI=
 		</data>
 		<key>Headers/NSString+TKSDK.h</key>
 		<data>
-		1A4pRdnHOwTWYEYkPObT0I2fhL4=
+		sWwQw6Z0FlvvS30+o1Ju1elwjJ0=
+		</data>
+		<key>Headers/NSValue+TKSDK.h</key>
+		<data>
+		6tgiepQ8g8iS8SK0JtclhkpxMhU=
 		</data>
 		<key>Headers/TKLinkTextView.h</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Headers/TKSDKUniversal.h</key>
 		<data>
-		dDwG441BEHkXcfDsAIGXtF4uif0=
+		HFeczAx69UkPvUuyNtclQYSg1xY=
 		</data>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>Headers/UIView+TKSDK.h</key>
 		<data>
-		N+MYxtTOqRaGT9IcCxfGZ61dQ+8=
+		AmOrxhfagO9jeIgg/Ire0CREGGA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -111,22 +115,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TFFUA4+zTT2YmuoSI3zSeNrmNVc=
+			k1fkBi6UQVeShgv20/i1v5L/tPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			T3syKc2cBlsXQZbPUIKlRJQRyyvWzqwNr+0hf3sc7fM=
+			ooKG8KvlG3Jk0Egj67LdnNxBDUi+j5WC6ZNE49hrTFs=
 			</data>
 		</dict>
 		<key>Headers/NSString+TKSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1A4pRdnHOwTWYEYkPObT0I2fhL4=
+			sWwQw6Z0FlvvS30+o1Ju1elwjJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			U0PWfm7Nkof7fb419MTkZL2tIWh9qpieJzyDDo410zc=
+			2uReejCHY4X5hOyv7YF6r9TnUO6aMpnanMdg3E8e5xk=
+			</data>
+		</dict>
+		<key>Headers/NSValue+TKSDK.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6tgiepQ8g8iS8SK0JtclhkpxMhU=
+			</data>
+			<key>hash2</key>
+			<data>
+			wPra2jSTFnxhQ8t3e+Qx83FXuJx5tSQaiBh46DLHnL4=
 			</data>
 		</dict>
 		<key>Headers/TKLinkTextView.h</key>
@@ -243,11 +258,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dDwG441BEHkXcfDsAIGXtF4uif0=
+			HFeczAx69UkPvUuyNtclQYSg1xY=
 			</data>
 			<key>hash2</key>
 			<data>
-			y2IGL99hCZqWo7tZ15XPR1IDekMRslFZwgMSCZVvI8o=
+			BQ9QBrkE9Qc359K0kdQChwUv31s0x1e5MWWU5nML5bU=
 			</data>
 		</dict>
 		<key>Headers/TKSDKUniversalMacro.h</key>
@@ -353,11 +368,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N+MYxtTOqRaGT9IcCxfGZ61dQ+8=
+			AmOrxhfagO9jeIgg/Ire0CREGGA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nfDaGU2S5tqAZQK/35pblaktlaZyoaoOOajHvVCiMqM=
+			21VkwJwV5T+7nrZ2v+2Yn+xCmfKzZXbvQe44JF07EfM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

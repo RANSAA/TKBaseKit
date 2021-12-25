@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (TKSDK)
 
+#pragma mark Selector
 /**
  功能：可以传递多个参数的performSelector方法
  @param selector 调用的方法，注意selector中的基础类型需要包装成类类型

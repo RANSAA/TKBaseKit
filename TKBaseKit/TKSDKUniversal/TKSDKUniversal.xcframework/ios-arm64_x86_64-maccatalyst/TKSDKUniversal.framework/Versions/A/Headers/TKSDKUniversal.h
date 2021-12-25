@@ -29,7 +29,7 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "UIDevice+TKSDK.h"
 #import "UIView+TKSDK.h"
 #import "UIApplication+TKSDK.h"
-#import "TKLinkTextView.h"
+#import "NSValue+TKSDK.h"
 
 
 //基础通用框架
@@ -42,6 +42,7 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "TKSDKListViewController.h"
 #import "TKSDKGridViewController.h"
 #import "TKSDKFPSLabel.h"
+#import "TKLinkTextView.h"
 
 
 //通用的一些基础工具类

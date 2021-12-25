@@ -9,17 +9,36 @@
  UIView扩展的一些常用功能
  **/
 #import <UIKit/UIKit.h>
+#import "NSValue+TKSDK.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
 @interface UIView (TKSDK)
 
-#pragma mark 0.3s防止重复点击
+#pragma mark frame相关设置
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGPoint origin;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign, readonly) CGPoint centerPoint;    //view的中心点(width,height的1/2处)，不是center
+
+
+#pragma mark 防止重复点击
 /** 取消UIview的userInteractionEnabled，0.3s后恢复 */
 - (void)setViewUserInteractionEnabledCancel;
 
 
-#pragma mark 常用的layer属性设置
+#pragma mark Layer: CAShapeLayer绘制任意圆角
+/**
+ 绘制任意圆角，corner表示4个顶点的圆角半径。
+ 使用CAShapeLayer方式实现
+ */
+- (void)setShapeLayerCornerRadiusWith:(UIEdgeCorners)corner;
+
+
+#pragma mark Layer: 常用的layer属性设置
+
 /** 设置view的边框宽度与颜色  */
 -(void)setLayerBorderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth;
 
@@ -46,7 +65,7 @@ PS:设置了masksToBounds = YES
 -(void)setLayerCornerRadiusWithTen;
 
 
-#pragma mark 获取当前View所在控制器
+#pragma mark Controller: 获取当前View所在控制器
 
 /**
 功能：获取view当前所在的Controller控制器。
@@ -62,7 +81,7 @@ PS:注意与controllerFromController的区别
 */
 - (nullable UIViewController *)controllerFromChildController;
 
-#pragma mark 约束添加
+#pragma mark Constraints: 约束添加
 /**
 向view添加相对于toView的四边都对齐的约束，并返回。
 return:返回四边的约束NSLayoutConstraint，顺序为top,left,Bottom,right
@@ -71,14 +90,7 @@ return:返回四边的约束NSLayoutConstraint，顺序为top,left,Bottom,right
 
 
 
-#pragma mark frame相关设置
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGPoint origin;
-@property (nonatomic, assign) CGSize size;
-@property (nonatomic, assign, readonly) CGPoint centerPoint;    //view的中心点(width,height的1/2处)，不是center
+
 
 @end
 
