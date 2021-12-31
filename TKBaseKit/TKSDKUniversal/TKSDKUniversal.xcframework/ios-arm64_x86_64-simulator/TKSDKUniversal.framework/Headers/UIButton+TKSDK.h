@@ -15,7 +15,6 @@
  */
 
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (TKSDK)
@@ -29,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setTitleColor:(UIColor *)color;
 /** 设置image  */
 - (void)setImage:(UIImage *)image;
+
+#pragma mark Action
+/** 添加一个action点击事件 */
+- (void)addActionWithBlock:(void(^)(UIButton *button))block;
 
 @end
 

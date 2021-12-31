@@ -30,6 +30,8 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "UIView+TKSDK.h"
 #import "UIApplication+TKSDK.h"
 #import "NSValue+TKSDK.h"
+#import "NSTimer+TKSDK.h"
+
 
 
 //基础通用框架
