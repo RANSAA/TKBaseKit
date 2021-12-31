@@ -16,9 +16,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (TKSDK)
-//这三个扩展的属性都是指UIControlStateNormal状态
+//这4个扩展的属性都是指UIControlStateNormal状态
 @property(nonatomic, strong) NSString *titleText;
 @property(nonatomic, strong) UIColor *titleColor;
+@property(nonatomic, strong) UIFont *titleFont;
 @property(nonatomic, strong) UIImage *image;
 
 
