@@ -9,25 +9,18 @@
 #import <UIKit/UIKit.h>
 
 /**
- ⚠️注意：
-        在UIButton扩展中添加setTitle:方法设置标题时,在iOS 10.3中可以正常设置，但是在iOS13.0+中无效，所以不要扩展setTitle:方法。
-
+ ⚠️注意：在UIButton扩展中添加setTitle:方法设置标题时,在iOS 10.3中可以正常设置，但是在iOS13.0+中无效，所以不要扩展setTitle:方法。
  */
 
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (TKSDK)
+//这三个扩展的属性都是指UIControlStateNormal状态
+@property(nonatomic, strong) NSString *titleText;
+@property(nonatomic, strong) UIColor *titleColor;
+@property(nonatomic, strong) UIImage *image;
 
-/** 设置标题 */
-- (void)setText:(NSString *)title;
-/** 设置标题 */
-- (void)setTitleText:(NSString *)title;
-
-/** 设置字体颜色 */
-- (void)setTitleColor:(UIColor *)color;
-/** 设置image  */
-- (void)setImage:(UIImage *)image;
 
 #pragma mark Action
 /** 添加一个action点击事件 */
