@@ -120,7 +120,7 @@
 #define kHEXColor(color)                    [UIColor colorWithHexString:color]
 #define kHEXColorAndAlpha(color,Alpha)      [UIColor colorWithHexString:color alpha:Alpha]
 //ios13动态颜色获取
-#define kDyColor(lightColor,darkColor)      [UIColor TKLightColor:lightColor darkColor:darkColor]
+#define kDyColor(lightColor,darkColor)      [UIColor colorWithLight:lightColor dark:darkColor]
 
 
 

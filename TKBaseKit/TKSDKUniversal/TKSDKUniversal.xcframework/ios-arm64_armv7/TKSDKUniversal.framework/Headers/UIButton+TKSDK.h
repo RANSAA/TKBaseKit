@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark Action
-/** 添加一个action点击事件 */
+/** 添加一个action点击事件,并且添加了0.3秒防止重复点击 */
 - (void)addActionWithBlock:(void(^)(UIButton *button))block;
 
 @end
