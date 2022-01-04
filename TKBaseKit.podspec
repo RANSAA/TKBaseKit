@@ -16,7 +16,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.1.9"         #版本
+  spec.version      = "2.2.0"         #版本
   spec.summary      = "基础通用框架，以及一些工具和一些三方框架的二次封装！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -67,8 +67,8 @@ Pod::Spec.new do |spec|
     ss.dependency 'Masonry'
     ss.dependency 'YYModel'
     ss.dependency 'MBProgressHUD'
-    ss.dependency 'GTMBase64'                       , '~> 1.0.1'
-    ss.dependency 'MJRefresh'                       , '~> 3.6'
+    ss.dependency 'GTMBase64'                       #, '~> 1.0.1'
+    ss.dependency 'MJRefresh'                       #, '~> 3.7.5'
     ss.dependency 'AFNetworking'                    , '~> 4.0'
 
   end

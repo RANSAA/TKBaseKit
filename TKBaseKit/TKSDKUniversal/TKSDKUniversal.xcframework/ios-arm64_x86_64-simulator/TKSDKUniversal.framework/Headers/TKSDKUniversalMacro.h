@@ -41,69 +41,43 @@
 
 
 //keyWindow
-#define appWin              [UIApplication TK_keyWindow]
+#define appWin              UIApplication.keyWindow
 // 直接隐藏键盘
 #define kHiddenKeyboard     [appWin endEditing:YES];
-/**
- 旧方法Xcode11.3中失效
- //keyWindow
- #define appWin [UIApplication sharedApplication].keyWindow
- // 直接隐藏键盘
- #define kHiddenKeyboard [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
- */
-
-
-
-//屏幕相关尺寸
-#define Screen_Bounds           [UIScreen mainScreen].bounds
-#define Screen_Width            [UIScreen mainScreen].bounds.size.width
-#define Screen_Height           [UIScreen mainScreen].bounds.size.height
-//获取状态栏实时的frame
-#define Screen_StatusFrame      [UIApplication sharedApplication].statusBarFrame
-//获取状态栏实时的width
-#define Screen_StatusWidth      [UIApplication sharedApplication].statusBarFrame.size.width
-//获取状态栏实时的height
-#define Screen_StatusHeight     [UIApplication sharedApplication].statusBarFrame.size.height
-//获取屏幕分辨率
-#define Screen_PhysicalBounds   [UIScreen mainScreen].nativeBounds
-
-
-
 
 
 //判断设备为iPhone X（即是否有刘海屏）
 #define kIsIPhoneX              [UIDevice TK_isFullScreen]
 
 
-//新：导航条有效高度默认为44，状态栏等高度实时获取（PS:与横竖屏，状态栏是否隐藏有关）
+//屏幕相关尺寸
+#define kScreenBounds           [UIScreen mainScreen].bounds
+#define kScreenSize             [UIScreen mainScreen].bounds.size
+#define kScreenWidth            [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight           [UIScreen mainScreen].bounds.size.height
+//获取设备的物理分辨率
+#define kScreenPhysicalBounds   [UIScreen mainScreen].nativeBounds
+
+
+
+//获取状态栏frame,width,height
+#define kStatusBarFrame     [UIDevice TK_getStatusBarFrame]
+#define kStatusBarWidth     [UIDevice TK_getStatusBarFrame].size.width
+
+
+
 //获取导航条区域高度
 #define kNavHeight              44.0
-//获取状态栏的总高度
-#define kStatusHeight           [UIDevice TK_getSafeTopAreaHeight]
-//获取底部凹凸区域的总高度
-#define kBarHeight              [UIDevice TK_getSafeBottomAreaHeight]
-//获取导航条和状态栏的高度
-#define kNavStatusHeight        (kStatusHeight + kNavHeight)
+//状态栏高度（顶部安全区域高度）
+#define kStatusBarHeight        [UIDevice TK_getSafeTopAreaHeight]
+//底部安全区域高度
+#define kBottomSafeAreaHeight   [UIDevice TK_getSafeBottomAreaHeight]
+//获取状态栏+导航条的高度
+#define kNavStatusBarHeight     (kNavHeight + kStatusBarHeight)
 //获取导航条，状态栏，底部凹凸区域的总高度
-#define kNavStatusBarHeight     (kNavStatusHeight + kBarHeight)
-//获取状态栏，底部凹凸区域的总高度
-#define kStatusBarHeight        (kStatusHeight + kBarHeight)
-
-/**
- 旧：以导航条高度固定(状态栏也固定)为44进行声明的一些宏定义（如果需要请定义新的宏进行使用）
- //获取导航条区域高度
- #define kNavHeight              44.0
- //获取状态栏的总高度
- #define kStatusHeight           [UIDevice TK_getDeviceStatusHeight]
- //获取底部凹凸区域的总高度
- #define kBarHeight              [UIDevice TK_getDeviceBottomSpaceHeight]
- //获取导航条和状态栏的高度
- #define kNavStatusHeight        (kStatusHeight + kNavHeight)
- //获取导航条，状态栏，底部凹凸区域的总高度
- #define kNavStatusBarHeight     (kNavStatusHeight + kBarHeight)
- //获取状态栏，底部凹凸区域的总高度
- #define kStatusBarHeight        (kStatusHeight + kBarHeight)
- */
+#define kNavAllSafeAreaHeight   (kNavStatusBarHeight + kBottomSafeAreaHeight)
+//获取状态栏和底部安全区域的总高度
+#define kAllSafeAreaHeight      (kStatusBarHeight + kBottomSafeAreaHeight)
 
 
 

@@ -13,19 +13,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIApplication (TKSDK)
-
-/**
-获取keyWindow,适配iOS13.0+
-PS:如果需要实现iPad多屏处理，最好是使用SceneDelegate管理Window
-*/
-+ (UIWindow*)TK_keyWindow;
-
-/**
- 获取当前显示的视图控制器
- */
-+ (UIViewController *)TK_getCurrentController;
-
-
+@property(class, nonatomic, strong, readonly) UIWindow *keyWindow;  //获取keyWindow,适配iOS13.0+；如果需要实现iPad多屏处理，最好是使用SceneDelegate管理Window。
+@property(class, nonatomic, strong, readonly) UIViewController *currentShowController;  //获取当前显示的视图控制器
 @end
 
 NS_ASSUME_NONNULL_END

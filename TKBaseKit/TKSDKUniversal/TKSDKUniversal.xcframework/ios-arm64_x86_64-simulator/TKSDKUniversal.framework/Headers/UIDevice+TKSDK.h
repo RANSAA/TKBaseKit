@@ -67,22 +67,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)TK_getInfoPlistStatusBarHidden;
 
 /**
-  获取设备的状态栏的高度(返回的是没有隐藏状态栏的时的高度，主要是用于适配留海相关)
-  有刘海的高度为44，没有的为20
-  PS:iPad UI上面的高度与iPhone上面的高度不一样
-  推荐使用：TK_getSafeTopAreaHeight
-*/
-+ (CGFloat)TK_getDeviceStatusHeight;
-
-/**
-  获取设备底部下巴区域的高度(为适配留海屏下巴区域的操作)
-  有留海下巴的填充高度为：34，没有的为：0
-  PS:iPad UI上面的高度与iPhone上面的高度不一样
-  推荐使用：TK_getSafeBottomAreaHeight
-*/
-+ (CGFloat)TK_getDeviceBottomSpaceHeight;
-
-/**
  获取顶部状态栏安全区域的高度（ps：没有刘海的状态栏高度）
  */
 + (CGFloat)TK_getSafeTopAreaHeight;
@@ -91,6 +75,11 @@ NS_ASSUME_NONNULL_BEGIN
  获取底部下巴安全区域的高度
  */
 + (CGFloat)TK_getSafeBottomAreaHeight;
+
+/**
+ 获取状态栏的frame
+ */
++ (CGRect)TK_getStatusBarFrame;
 
 
 /**

@@ -32,6 +32,10 @@
 		<data>
 		JFTP8a6LkZzIilGRjXNkbztiVPk=
 		</data>
+		<key>Headers/TKSDKDashLineView.h</key>
+		<data>
+		gd6v9J1FVIGE4koO2yVdu+uzTZo=
+		</data>
 		<key>Headers/TKSDKDecimalTool.h</key>
 		<data>
 		G4Owere3XDgihCjfNvZU6sVyjWk=
@@ -62,11 +66,11 @@
 		</data>
 		<key>Headers/TKSDKUniversal.h</key>
 		<data>
-		Fqqo3HnO18jHlkdJsT3xqznF4g8=
+		RSm+lU3Xwu0SA3FZoH814j16ilU=
 		</data>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<data>
-		En9mLbo4RZyMb+0CgBDo6opBlBs=
+		xm1V1SRgweWbYougf6iZUiFL6gM=
 		</data>
 		<key>Headers/TKSDKViewController.h</key>
 		<data>
@@ -82,7 +86,11 @@
 		</data>
 		<key>Headers/UIApplication+TKSDK.h</key>
 		<data>
-		ot32UimDrX8Ri+ZXGVypI729uqQ=
+		cveoXXjUyfT1hY9EWsJ7vIlwUqA=
+		</data>
+		<key>Headers/UIBezierPath+TKSDK.h</key>
+		<data>
+		lpbSebgVkv3WibZQYlLvfXGq1FI=
 		</data>
 		<key>Headers/UIButton+TKSDK.h</key>
 		<data>
@@ -90,11 +98,11 @@
 		</data>
 		<key>Headers/UIColor+TKSDK.h</key>
 		<data>
-		WcV4hBBJKk1lSEUJqwyGb+Ge6O0=
+		2rKSqfR+xp9sopSwBbDVlySWbxg=
 		</data>
 		<key>Headers/UIDevice+TKSDK.h</key>
 		<data>
-		yLNJPV/NLtawhd8e/RSPq0DmsOs=
+		IrJySvHKDTfPDd82vJudtOvD5Bg=
 		</data>
 		<key>Headers/UIImage+TKSDK.h</key>
 		<data>
@@ -102,11 +110,11 @@
 		</data>
 		<key>Headers/UIView+TKSDK.h</key>
 		<data>
-		AmOrxhfagO9jeIgg/Ire0CREGGA=
+		aD82yCb4Rkj3Cqo3dTS/VNMwhSc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8tOiplQLUJUI51RCMlw8Q7m4Er4=
+		3egKBhzQIn5rwy6qf0MS93EnwI8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -192,6 +200,17 @@
 			MXs7S++b0Y4T4pWncUNkmFXDFEwEA2DLhYALjq1UGHM=
 			</data>
 		</dict>
+		<key>Headers/TKSDKDashLineView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gd6v9J1FVIGE4koO2yVdu+uzTZo=
+			</data>
+			<key>hash2</key>
+			<data>
+			9FhluZuMZpWXGyfRn8jJQWB0URIEeix1ItuGLnow9lg=
+			</data>
+		</dict>
 		<key>Headers/TKSDKDecimalTool.h</key>
 		<dict>
 			<key>hash</key>
@@ -273,22 +292,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fqqo3HnO18jHlkdJsT3xqznF4g8=
+			RSm+lU3Xwu0SA3FZoH814j16ilU=
 			</data>
 			<key>hash2</key>
 			<data>
-			jhQ292xpjtsojlikEX0Dcrc+xqPZB6M7SNiIF3kSTiw=
+			UBjsaQjSOIoi9QeKvT/HA4eHPvKSrjStJli/xzwkDjE=
 			</data>
 		</dict>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			En9mLbo4RZyMb+0CgBDo6opBlBs=
+			xm1V1SRgweWbYougf6iZUiFL6gM=
 			</data>
 			<key>hash2</key>
 			<data>
-			1GLK/1ZtlYzvFax9LT3BUe3J/2HVX/fjLWVRtxj9PLk=
+			gvjhHfGNnqdTSoLqzJAs0bQDRrwU8rW1YA07VW01ijk=
 			</data>
 		</dict>
 		<key>Headers/TKSDKViewController.h</key>
@@ -328,11 +347,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ot32UimDrX8Ri+ZXGVypI729uqQ=
+			cveoXXjUyfT1hY9EWsJ7vIlwUqA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nh6SzTfzlZi7kpS64QQqUI6eMVSCVyDCbdxpgA1n+g8=
+			6sP0sHY8HcqE7SqKTwy+92Oqj8TQdTBPtl8vD9bOUFI=
+			</data>
+		</dict>
+		<key>Headers/UIBezierPath+TKSDK.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lpbSebgVkv3WibZQYlLvfXGq1FI=
+			</data>
+			<key>hash2</key>
+			<data>
+			gAYTrn9fHwiy3eUIHCk9rf+SImZ7u7JMgAM6J4FFL4k=
 			</data>
 		</dict>
 		<key>Headers/UIButton+TKSDK.h</key>
@@ -350,22 +380,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WcV4hBBJKk1lSEUJqwyGb+Ge6O0=
+			2rKSqfR+xp9sopSwBbDVlySWbxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			mu5RZtEHQK16k87Y5Lw3rtLXfbIayCORwGmCu0H29NI=
+			QiGfgnBowBXBJ/HOzW+OLtqO8xn1k1T9bKqEumXaQLo=
 			</data>
 		</dict>
 		<key>Headers/UIDevice+TKSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yLNJPV/NLtawhd8e/RSPq0DmsOs=
+			IrJySvHKDTfPDd82vJudtOvD5Bg=
 			</data>
 			<key>hash2</key>
 			<data>
-			u1m7eIqEHImO9ixHQfGVyzk+0wf3V1Di07U9P4397vc=
+			hrEwFlUnBcJgKpGD8tPbZLNVGlG7BhHG7oxwesETKyM=
 			</data>
 		</dict>
 		<key>Headers/UIImage+TKSDK.h</key>
@@ -383,11 +413,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AmOrxhfagO9jeIgg/Ire0CREGGA=
+			aD82yCb4Rkj3Cqo3dTS/VNMwhSc=
 			</data>
 			<key>hash2</key>
 			<data>
-			21VkwJwV5T+7nrZ2v+2Yn+xCmfKzZXbvQe44JF07EfM=
+			4/KHmWrA69Q6s6WWCO/kiOyQjuAmh88Xwe27Jm0rIe4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
