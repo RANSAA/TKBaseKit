@@ -26,6 +26,8 @@ UIKIT_STATIC_INLINE BOOL UIEdgeCornersEqualToEdgeCorners(UIEdgeCorners corner1, 
     return corner1.topLeft == corner2.topLeft && corner1.bottomLeft == corner2.bottomLeft && corner1.bottomRight == corner2.bottomRight && corner1.topRight == corner2.topRight;
 }
 
+UIKIT_EXTERN NSString *NSStringFromUIEdgeCorners(UIEdgeCorners corners);
+
 
 @interface NSValue (TKSDK)
 + (NSValue *)valueWithUIEdgeCorners:(UIEdgeCorners)corner;

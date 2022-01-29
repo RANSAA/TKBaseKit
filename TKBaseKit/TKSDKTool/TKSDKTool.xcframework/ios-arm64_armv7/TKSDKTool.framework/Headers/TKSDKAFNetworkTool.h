@@ -24,7 +24,7 @@
  5.响应的数据可以根据其类容进行装换，如：
  AFJSONResponseSerializer           JSON
  AFXMLParserResponseSerializer      XML,只能返回XMLParser,还需要自己通过代理方法解析
- AFXMLDocumentResponseSerializer (Mac OS X)
+ AFXMLDocumentResponseSerializer    (Mac OS X)
  AFPropertyListResponseSerializer   PList  (是一种特殊的XML,解析起来相对容易)
  AFImageResponseSerializer          Image
  AFCompoundResponseSerializer       组合
@@ -45,8 +45,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TKSDKTooImportSDK.h"
-#import "TKSDKToolBase.h"
-
+#import "TKSDKAFNetworkConfig.h"
 
 
 typedef  NS_ENUM(NSInteger ,TKSDKNetRequestType){
@@ -65,7 +64,6 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
 
 
 @interface TKSDKAFNetworkTool : NSObject
-
 #pragma mark -------基础设置区域，如：开启缓存，开启log等--------
 //⚠️⚠️⚠️：推荐使用TKSDKAFNetworkConfig进行参数配置。
 
@@ -250,7 +248,14 @@ typedef NS_ENUM(NSInteger,TKSDKNetResponseType){
 + (nullable id)customRequestMutablePar:(nullable id)par url:(nonnull NSString *)url;
 
 
-/// 重写该方法，可以对响应数据二次处理，如筛选某些特定通用数据等，注意最终返回的数据类型是不会改变的
+/// 可以重写该方法对响应Data数据进行处理，然后再将处理后的数据返回，该方法为最优先的数据处理函数。例如通过该方法解密数据后，其它方法的入口数据都是解密后的NSData数据
+/// @param responseData 服务器原始的响应NSData数据
+/// @param url 对应的url
+/// @return 处理后的NSData数据
+/// 注意:请求失败时并且成功从缓存中读取到数据时success回调时是不会走该方法的，因为缓存的数据就是该方法处理后返回的NSData
++ (nullable NSData *)customPrepareResponseData:(nullable NSData *)responseData url:(nonnull NSString *)url;
+
+/// 重写该方法，可以先对响应数据二次处理，注意该方法是不会修改响应数据，比如在success回调前可以先筛选某些特定通用数据等。
 /// @param responseObject 请求成功时响应的数据(类型：NSData)
 /// @param requestType 请求类型
 /// @param responseType 响应数据的类型

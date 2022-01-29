@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface TKSDKAFNetworkConfig : NSObject
 /** 是否开启log,  默认：YES */
 @property (nonatomic, assign) BOOL isLog;
@@ -17,8 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isURLEncode;
 //  设置文件上传时，文件的MIME类型， 默认：@"*/*"
 @property (nonatomic, strong) NSString *updateMIME;
-/** 是否开启缓存(只会缓存TKSDKNetResponseTypeJson响应类型),  默认：NO  */
-@property (nonatomic, assign) BOOL isCache;
 /** 使用cache时，可以用来标记不同用户。 默认：@"TK" */
 @property (nonatomic, strong) NSString *cacheUser;
 /**
@@ -32,9 +31,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *random32;
 
 
+/**单利实例化*/
 + (instancetype)shared;
 
 
+/** 是否缓存请求数据，default NO; 注意要想缓存请求数据isCashe的值必须为YES*/
+@property (nonatomic, assign) BOOL isCache;
+/** 是否缓存所有的请求数据，default NO */
+@property (nonatomic, assign) BOOL allCache;
+/** 添加需要缓存请求的url*/
+- (void)addCacheUrl:(NSString *)url;
+/** 检查url是否在缓存列表中*/
+- (BOOL)containsCacheUrl:(NSString *)url;
+/** 获取所有的缓存url*/
+- (NSArray *)allCacheUrls;
 /** 清除缓存 **/
 - (void)clearCache;
 /** 获取缓存目录 */
