@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/NSValue+TKSDK.h</key>
 		<data>
-		kt0fm4RbN8P5Vexi2iBP3q37VFs=
+		+U629HEFDzG0AIx4XkZEKW9Su48=
 		</data>
 		<key>Headers/TKLinkTextView.h</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>Headers/UIView+TKSDK.h</key>
 		<data>
-		aD82yCb4Rkj3Cqo3dTS/VNMwhSc=
+		JUuMD4aOngDdHst0VSL2cAumE54=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3egKBhzQIn5rwy6qf0MS93EnwI8=
+		zqdHhXXj+VCGHpJPUUtRNNMZV7g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -160,11 +160,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kt0fm4RbN8P5Vexi2iBP3q37VFs=
+			+U629HEFDzG0AIx4XkZEKW9Su48=
 			</data>
 			<key>hash2</key>
 			<data>
-			ziDQQTfUH0OzgtkRN4+ItfbIjQBHlr/dOL7wYScJ0FU=
+			Xwc7GD3d1w0S7t13OlNpMcdP1pqqKdJOOYIwQ+tf31o=
 			</data>
 		</dict>
 		<key>Headers/TKLinkTextView.h</key>
@@ -413,11 +413,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aD82yCb4Rkj3Cqo3dTS/VNMwhSc=
+			JUuMD4aOngDdHst0VSL2cAumE54=
 			</data>
 			<key>hash2</key>
 			<data>
-			4/KHmWrA69Q6s6WWCO/kiOyQjuAmh88Xwe27Jm0rIe4=
+			3l4KAB26pwUsbBJkmsLi+b8vJJAL89gZRO5ZVwqKeIo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

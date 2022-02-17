@@ -11,8 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//rect的4个角
 typedef struct __attribute__((objc_boxable)) UIEdgeCorners{
-    CGFloat topLeft,bottomLeft,bottomRight,topRight;    //rect的4个角
+    CGFloat topLeft,bottomLeft,bottomRight,topRight;    
 }UIEdgeCorners;
 
 #define UIEdgeCornersZero UIEdgeCornersMake(0, 0, 0, 0)
