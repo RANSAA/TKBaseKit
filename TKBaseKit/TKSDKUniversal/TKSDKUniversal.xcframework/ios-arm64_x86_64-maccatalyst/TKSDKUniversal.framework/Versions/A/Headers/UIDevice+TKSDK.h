@@ -83,6 +83,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
+ 获取推送时的deviceToken；即将NSData格式的deviceToken转化为十六进制格式的字符串
+ */
++ (NSString *)TK_getDeviceTokenWithRemoteNotification:(NSData *)deviceToken;
+
+
+/**
  * 获取 iphone 名称
  **/
 + (NSString *)TK_getIphoneName;
