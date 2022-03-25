@@ -34,6 +34,8 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "UIDevice+TKSDK.h"
 #import "UIImage+TKSDK.h"
 #import "UIView+TKSDK.h"
+#import "NSFileManager+TKSDK.h"
+
 
 
 
@@ -42,7 +44,7 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "TKSDKNavigationBar.h"
 #import "TKSDKFPSLabel.h"
 #import "TKSDKDashLineView.h"
-#import "TKLinkTextView.h"
+#import "TKSDKLinkTextView.h"
 
 
 

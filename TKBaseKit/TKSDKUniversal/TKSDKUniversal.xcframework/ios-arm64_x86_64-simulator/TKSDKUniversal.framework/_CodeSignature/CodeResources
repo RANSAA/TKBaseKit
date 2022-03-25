@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NSFileManager+TKSDK.h</key>
+		<data>
+		RYgFf25LaDd+DelhPVYBUjWnYPo=
+		</data>
 		<key>Headers/NSObject+TKSDK.h</key>
 		<data>
 		tMrP3rx2cGuGoSLaN5Xl21ytf8w=
@@ -19,10 +23,6 @@
 		<key>Headers/NSValue+TKSDK.h</key>
 		<data>
 		+U629HEFDzG0AIx4XkZEKW9Su48=
-		</data>
-		<key>Headers/TKLinkTextView.h</key>
-		<data>
-		t3SaAfSHeAp4BHetopsMLsI4y7k=
 		</data>
 		<key>Headers/TKSDKClearManager.h</key>
 		<data>
@@ -48,6 +48,10 @@
 		<data>
 		pdlYzdYd/QIfrLFohgRRS3u5HNc=
 		</data>
+		<key>Headers/TKSDKLinkTextView.h</key>
+		<data>
+		NZR7IpgphjsR04YTGcRtb4N+0i8=
+		</data>
 		<key>Headers/TKSDKListViewController.h</key>
 		<data>
 		0XnfghMfEPCj7vgo6YHL1cd/F7M=
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/TKSDKUniversal.h</key>
 		<data>
-		RSm+lU3Xwu0SA3FZoH814j16ilU=
+		3wq4UVtqwy2x3pswNotE+V43UX8=
 		</data>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>Headers/UIButton+TKSDK.h</key>
 		<data>
-		Xvn6kSiOZQGoQy9OoivPPheAVeI=
+		uZ89EUwOT7kJKv4w1VitvT8uY+Q=
 		</data>
 		<key>Headers/UIColor+TKSDK.h</key>
 		<data>
@@ -114,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zqdHhXXj+VCGHpJPUUtRNNMZV7g=
+		rdHtRzxz78AjsY7+rLfZdWOtcDI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -123,6 +127,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NSFileManager+TKSDK.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RYgFf25LaDd+DelhPVYBUjWnYPo=
+			</data>
+			<key>hash2</key>
+			<data>
+			1+HMzhz3wJ3Kp++tjjCqi3o5s69fnPQEhY8mCfYXCBY=
+			</data>
+		</dict>
 		<key>Headers/NSObject+TKSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -165,17 +180,6 @@
 			<key>hash2</key>
 			<data>
 			Xwc7GD3d1w0S7t13OlNpMcdP1pqqKdJOOYIwQ+tf31o=
-			</data>
-		</dict>
-		<key>Headers/TKLinkTextView.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t3SaAfSHeAp4BHetopsMLsI4y7k=
-			</data>
-			<key>hash2</key>
-			<data>
-			1L0X3GeYAxoNtP12aOdnay9DQG0Qnq++CN+JpQusTbM=
 			</data>
 		</dict>
 		<key>Headers/TKSDKClearManager.h</key>
@@ -244,6 +248,17 @@
 			5x/SrGIzJ1WwN0VstFQR2cwYQsIR9ZUdRRNybZiQ4Wc=
 			</data>
 		</dict>
+		<key>Headers/TKSDKLinkTextView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NZR7IpgphjsR04YTGcRtb4N+0i8=
+			</data>
+			<key>hash2</key>
+			<data>
+			sqa+wrNYhvtQMePBcoKkrF/ia2LCwvR+ybRcRkFjAnM=
+			</data>
+		</dict>
 		<key>Headers/TKSDKListViewController.h</key>
 		<dict>
 			<key>hash</key>
@@ -292,11 +307,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RSm+lU3Xwu0SA3FZoH814j16ilU=
+			3wq4UVtqwy2x3pswNotE+V43UX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			UBjsaQjSOIoi9QeKvT/HA4eHPvKSrjStJli/xzwkDjE=
+			Zwtp831RWbVcCKha1sAKfika2o4n4CQEdh07mfHb8jc=
 			</data>
 		</dict>
 		<key>Headers/TKSDKUniversalMacro.h</key>
@@ -369,11 +384,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xvn6kSiOZQGoQy9OoivPPheAVeI=
+			uZ89EUwOT7kJKv4w1VitvT8uY+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			FO1DFu4jG6QPBaHAiBlOUsMU27mZKDxLL8clNWWf+2M=
+			hkDHV4qBRbi9OHv5I1vLGc27NJxTUY4/JaM0t8DhnCk=
 			</data>
 		</dict>
 		<key>Headers/UIColor+TKSDK.h</key>

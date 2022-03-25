@@ -48,6 +48,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 #pragma mark 资源获取--如果图片资源过多，可以在App启后先执行加载资源的方法(会有缓存)
+/**
+ 加载TKSDKTool.bunlde中的默认刷新图片资源(会有缓存);
+ 如果图片资源过多，可以在APP启动后在AppDelegate中先开辟一个线程，然后再加载一次该方法
+ */
+- (void)loadDefaultImageResource;
+
 
 /**
  根据bundle中的文件名称创建bundle
