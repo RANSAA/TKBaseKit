@@ -58,14 +58,15 @@
 
 
 
-#pragma mark ----------配置----------
+
+#pragma mark - ----------配置----------
 /** navView竖屏时的高度，默认为44 */
 @property(nonatomic, assign) CGFloat navViewPortraitHeight;
 /** navView横屏时的高度，默认为44 */
 @property(nonatomic, assign) CGFloat navViewLandscapeHeight;
 
 
-#pragma mark ----------约束----------
+#pragma mark - ----------约束----------
 //返回按钮的宽度约束
 @property(nonatomic, strong, nullable)NSLayoutConstraint *layBtnBackWidth;
 //返回按钮距离导航条的左边的距离-竖屏
@@ -133,6 +134,15 @@
  */
 + (nullable instancetype)instanceWithController:(nullable UIViewController *)controller;
 
+
+
+#pragma mark - 获取所有创建的TKSDKNavigationBar
+
+/**
+ 获取所有的TKSDKNavigationBar控件，可用于批量处理
+ PS:注意与appearance的区别
+ */
++ (NSMutableSet *_Nonnull)stockList;
 
 
 @end
