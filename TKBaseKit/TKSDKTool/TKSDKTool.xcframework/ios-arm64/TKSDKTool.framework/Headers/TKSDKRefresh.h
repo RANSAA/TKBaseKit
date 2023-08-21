@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
  bundle:
  dirName:bundle中的文件名称，例如:nil, /, dir_1 , dir1/dir2/dir3
  */
-- (NSBundle *)createBundleWithInBundle:(NSBundle *)bundle dirName:(NSString *)dirName;
+- (NSBundle *)createBundleWithInBundle:(NSBundle *)bundle dirName:(NSString *)dirName ;
 
 /**
  获取bundle中指定目录(一级目录)下的所有文件的文件名或者全路径

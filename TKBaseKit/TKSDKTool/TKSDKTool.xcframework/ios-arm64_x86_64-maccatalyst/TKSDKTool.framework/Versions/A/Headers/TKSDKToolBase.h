@@ -13,8 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TKSDKToolBase : NSObject
 
 // 过期提醒
-#define TKSDKToolDeprecated(DESCRIPTION) __attribute__((deprecated(DESCRIPTION)))
+//#define TKSDKToolDeprecated(DESCRIPTION) __attribute__((deprecated(DESCRIPTION)))
 
+#ifndef TKSDKToolDeprecated
+#define TKSDKToolDeprecated(DESCRIPTION) __attribute__((deprecated(DESCRIPTION)))
+#endif
+
+ 
 
 
 /**

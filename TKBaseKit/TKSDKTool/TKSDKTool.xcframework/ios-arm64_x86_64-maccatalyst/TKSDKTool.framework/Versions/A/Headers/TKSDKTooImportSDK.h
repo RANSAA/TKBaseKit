@@ -69,15 +69,4 @@
 
 
 
-//#import <AFNetworking/AFNetworking.h>
-//AFNetworking, 移出了其中的UIKit模块
-//#import <AFURLSessionManager.h>
-//#import <AFHTTPSessionManager.h>
-//#import <AFURLRequestSerialization.h>
-//#import <AFURLResponseSerialization.h>
-//#import <AFNetworkReachabilityManager.h>
-//#import <AFSecurityPolicy.h>
-
-
-
 #endif /* TKSDKTooImportSDK_h */
