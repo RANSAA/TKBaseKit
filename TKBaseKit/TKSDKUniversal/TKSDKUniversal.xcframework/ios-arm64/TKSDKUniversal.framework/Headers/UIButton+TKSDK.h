@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (TKSDK)
 //这5个扩展的属性都是指UIControlStateNormal状态
-@property(nonatomic, strong) NSString *text;        //等效titleText
+//@property(nonatomic, strong) NSString *text;        //等效titleText
 @property(nonatomic, strong) NSString *titleText;   //等效text
 @property(nonatomic, strong) UIColor *titleColor;
 @property(nonatomic, strong) UIFont *titleFont;

@@ -45,6 +45,8 @@ FOUNDATION_EXPORT const unsigned char TKSDKUniversalVersionString[];
 #import "TKSDKFPSLabel.h"
 #import "TKSDKDashLineView.h"
 #import "TKSDKLinkTextView.h"
+#import "TKSDKCornerShadowView.h"
+
 
 
 

@@ -3,7 +3,23 @@
 <br>
 
 
-### 警告： 2.1.9即以后的版本使用了XCFramework构建，需要Xcode11+才能支持；如果使用低于Xcode11版本，可以直接在.xcframework文件中找到指定架构版本使用即可。
+### 更新⚠️⚠️： 
+1. v2.2.1版本支持Xcode14, iOS版本支持切换到11.0+
+2. 对内置的三方库引用切换到了ctsfok用户的fok版本，而不是用原作者的库，所以引用方式有一点变动，切换的三方库有：
+```
+Masonry:
+主分支：
+pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git'
+指定tag：
+pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git', :tag => 'v1.1.1'
+
+
+YYModel:
+主分支：
+pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git'
+指定tag：
+pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.0.5'
+```
 
 <br>
 
@@ -15,43 +31,57 @@
 <br>
 
 ## 使用说明
-1.CocoaPods方式
+
+1. CocoaPods方式：
 ```
 //全部引入
-pod 'TKBaseKit', '2.1.9'    
+pod 'TKBaseKit', '2.2.1'    
 
 使用：直接导入下列头文件即可：
 #import <TKBaseKit.h>
 
 
-//模块引入
+//按模块引入
 pod 'TKBaseKit/TKSDKUniversal'
 pod 'TKBaseKit/TKSDKTool'
 
 使用：导入对应静态库的头文件即可：
 #import <TKSDKUniversal/TKSDKUniversal.h>
 #import <TKSDKTool/TKSDKTool.h>
+```
+2. 手动添加
+```
+//全部引入
+将TKBaseKit中的所有文件加入项目中
 
+
+//按模块引入
+TKSDKUniversal.xcframework
+TKSDKTool.xcframework
+TKSDKTool.bundle
+
+然后按需导入对应静态库的头文件：
+#import <TKSDKUniversal/TKSDKUniversal.h>
+#import <TKSDKTool/TKSDKTool.h>
+
+
+然后对项目进行设置：
+1.  设置"Other Linker Flags"-->添加: -ObjC 
+2.  将Build Settings中的Allow Non-modular Includes In Framework Modules设为YES
+3.  将Build Settings中的 "Excluded Architectures" --> "Release" --> 选中 --> "Any iOS Simulator SDK", 为其添加："arm64"。 即排除模拟器arm64架构的生成。
+注意：第3项可以根据情况不设置。
 ```
-2.手动添加
+3. 内置依赖三方库添加，如果不使用TKSDKTool框架可不添加三方依赖，因为只有TKSDKTool内置了的三方依赖库
 ```
-第一步：先将如下文件添加到项目中：
-    TKSDKUniversal.framework
-    TKSDKTool.framework
-    TKSDKTool.bundle
-第二步：导入三方依赖(需要匹配指定版本)
-      pod 'Masonry'
-      pod 'YYModel'
-      pod 'MBProgressHUD'
-      pod 'GTMBase64'          , '~> 1.0.1'
-      pod 'MJRefresh'          , '~> 3.6'
-      pod 'AFNetworking'       , '~> 4.0'
-第三步：
-    1.设置"Other Linker Flags"-->添加: -ObjC 
-    2.将Build Settings中的Allow Non-modular Includes In Framework Modules设为YES
-    3.将Build Settings中的 "Excluded Architectures" --> "Release" --> 选中 --> "Any iOS Simulator SDK", 为其添加："arm64"。 即排除模拟器arm64架构的生成。
-    
+    pod 'MJRefresh',     '~> 3.7'
+    pod 'GTMBase64'
+    pod 'AFNetworking'
+    pod 'MBProgressHUD'
+    pod 'Masonry',       :git => 'https://github.com/ctsfork/Masonry.git', :tag => 'v1.1.1'
+    pod 'YYModel',       :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.0.5'
 ```
+
+
 
 
 <br>
@@ -125,6 +155,7 @@ pod 'TKBaseKit/TKSDKTool'
 
 > * **TKSDKClearManager**：缓存清理工具
 
+* **未全部列出，可自行查看框架！**
 
 <br>
 

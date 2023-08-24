@@ -15,8 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  检查文件是否存在，如果存在则删除(不区分是文件还是目录)
  */
-- (void)checkFileExitsToPath:(NSString *)toPath;
-- (void)checkFileExitsToURL:(NSURL *)toURL;
+- (void)checkFileExitsAndDeleteWithPath:(NSString *)toPath;
+- (void)checkFileExitsAndDeleteWithURL:(NSURL *)toURL;
+
+/** 如果目录不存在则创建，允许创建多级子目录 */
+- (void)createDirectoryAtPath:(NSString *)path;
 
 /**
  功能：move，新增覆盖功能

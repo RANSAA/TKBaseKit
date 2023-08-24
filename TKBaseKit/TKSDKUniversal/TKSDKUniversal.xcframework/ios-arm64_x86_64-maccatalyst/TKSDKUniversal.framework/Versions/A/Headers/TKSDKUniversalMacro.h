@@ -14,12 +14,15 @@
  */
 
 
-//BUG字符串是否输出t日志
+
+//BUG字符串是否输出日志
+#ifndef TKLog
 #ifdef DEBUG
-//#define TKLog(...) NSLog(__VA_ARGS__)
-#define TKLog(FORMAT, ...) fprintf(stderr,"function:%s line:%d content:   %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//#define TKLog(fmt, ...) NSLog((fmt), ##__VA_ARGS__);
+#define TKLog(FORMAT, ...) fprintf(stderr,"function:%s line:%d content: %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
-#define TKLog(FORMAT, ...) nil
+#define TKLog(...)
+#endif
 #endif
 
 

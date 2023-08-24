@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NSFileManager+TKSDK.h</key>
 		<data>
-		RYgFf25LaDd+DelhPVYBUjWnYPo=
+		b4wEb/2A6nsyTPlAVUekc8TVrLM=
 		</data>
 		<key>Headers/NSObject+TKSDK.h</key>
 		<data>
@@ -31,6 +31,10 @@
 		<key>Headers/TKSDKCollectionViewController.h</key>
 		<data>
 		JFTP8a6LkZzIilGRjXNkbztiVPk=
+		</data>
+		<key>Headers/TKSDKCornerShadowView.h</key>
+		<data>
+		ZiHdK5M/bDS7dIYTVS/S6Xz3VBY=
 		</data>
 		<key>Headers/TKSDKDashLineView.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/TKSDKNavigationBar.h</key>
 		<data>
-		B2IHDjwOMnlSmGubyC3C8sMujRQ=
+		VgRP99arNdoUDdagUEr40gi3Qsk=
 		</data>
 		<key>Headers/TKSDKNavigationController.h</key>
 		<data>
@@ -70,11 +74,11 @@
 		</data>
 		<key>Headers/TKSDKUniversal.h</key>
 		<data>
-		3wq4UVtqwy2x3pswNotE+V43UX8=
+		liPpPO1v3w54Ky1gUFYARDGkMVU=
 		</data>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<data>
-		M3PpBfXvTVw2E4NxhteJrSF/m7s=
+		Qdt93LTZZhKeqT79AR+MH21dHsA=
 		</data>
 		<key>Headers/TKSDKViewController.h</key>
 		<data>
@@ -90,7 +94,7 @@
 		</data>
 		<key>Headers/UIApplication+TKSDK.h</key>
 		<data>
-		cveoXXjUyfT1hY9EWsJ7vIlwUqA=
+		GoCFy/7h65NRMDd7K6vaY12KRDE=
 		</data>
 		<key>Headers/UIBezierPath+TKSDK.h</key>
 		<data>
@@ -98,7 +102,7 @@
 		</data>
 		<key>Headers/UIButton+TKSDK.h</key>
 		<data>
-		uZ89EUwOT7kJKv4w1VitvT8uY+Q=
+		ijXnMTrpL26bM4xmseKtxwBK/0U=
 		</data>
 		<key>Headers/UIColor+TKSDK.h</key>
 		<data>
@@ -110,15 +114,15 @@
 		</data>
 		<key>Headers/UIImage+TKSDK.h</key>
 		<data>
-		XUZExCL6bSI60YDm6ZWLoFv9G1I=
+		VFBLnaX2EAxt9ckqw1ITDGk9JPE=
 		</data>
 		<key>Headers/UIView+TKSDK.h</key>
 		<data>
-		JUuMD4aOngDdHst0VSL2cAumE54=
+		9iJj5KqLwd/5WHnPHB5EMK4TpgQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i9K+EaFIFWAGPh5B5JHDRkB1Q+o=
+		7BgUl3vR7MJxj4y02O0GBcy5EIQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RYgFf25LaDd+DelhPVYBUjWnYPo=
+			b4wEb/2A6nsyTPlAVUekc8TVrLM=
 			</data>
 			<key>hash2</key>
 			<data>
-			1+HMzhz3wJ3Kp++tjjCqi3o5s69fnPQEhY8mCfYXCBY=
+			N8b9GvIqjtT3S/IyHWQp7XPKJJXFWq3g10dIJ2NdKQg=
 			</data>
 		</dict>
 		<key>Headers/NSObject+TKSDK.h</key>
@@ -202,6 +206,17 @@
 			<key>hash2</key>
 			<data>
 			MXs7S++b0Y4T4pWncUNkmFXDFEwEA2DLhYALjq1UGHM=
+			</data>
+		</dict>
+		<key>Headers/TKSDKCornerShadowView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZiHdK5M/bDS7dIYTVS/S6Xz3VBY=
+			</data>
+			<key>hash2</key>
+			<data>
+			4zqJQ6yuJ8zLZEca1295Myodz+PebwuQ2U/BEwEzFTs=
 			</data>
 		</dict>
 		<key>Headers/TKSDKDashLineView.h</key>
@@ -274,11 +289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B2IHDjwOMnlSmGubyC3C8sMujRQ=
+			VgRP99arNdoUDdagUEr40gi3Qsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			t7hz/ov9EBKKBrGBaqzjuZ0eaxRFj4Yoz6nsc/unNv0=
+			K54Z3ZAByFBXR+mCgSSatipvlGw5W+pXZpvu+ddy7po=
 			</data>
 		</dict>
 		<key>Headers/TKSDKNavigationController.h</key>
@@ -307,22 +322,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3wq4UVtqwy2x3pswNotE+V43UX8=
+			liPpPO1v3w54Ky1gUFYARDGkMVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zwtp831RWbVcCKha1sAKfika2o4n4CQEdh07mfHb8jc=
+			Fts9oUTyjWXu66cQ7cQk0eoiK3+Kx6dA+NyDyUlm1mc=
 			</data>
 		</dict>
 		<key>Headers/TKSDKUniversalMacro.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3PpBfXvTVw2E4NxhteJrSF/m7s=
+			Qdt93LTZZhKeqT79AR+MH21dHsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WUi0/lG5V7JNy+BdP5euf6CM0dpgXXNreETfN5Rw5sc=
+			YznJGc2WBeIfXW06AwcZzPDHnzCkXK8zIqZgWdmYBpA=
 			</data>
 		</dict>
 		<key>Headers/TKSDKViewController.h</key>
@@ -362,11 +377,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cveoXXjUyfT1hY9EWsJ7vIlwUqA=
+			GoCFy/7h65NRMDd7K6vaY12KRDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			6sP0sHY8HcqE7SqKTwy+92Oqj8TQdTBPtl8vD9bOUFI=
+			ZLPwD+n5CQJETO3ZrHrXe4i/TpAhTM/DkZ1oLv4K7oo=
 			</data>
 		</dict>
 		<key>Headers/UIBezierPath+TKSDK.h</key>
@@ -384,11 +399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uZ89EUwOT7kJKv4w1VitvT8uY+Q=
+			ijXnMTrpL26bM4xmseKtxwBK/0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			hkDHV4qBRbi9OHv5I1vLGc27NJxTUY4/JaM0t8DhnCk=
+			CweG7nQQ8j/ua60i70bX0gD6wa1p7SKYo9DriT9wDx0=
 			</data>
 		</dict>
 		<key>Headers/UIColor+TKSDK.h</key>
@@ -417,22 +432,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XUZExCL6bSI60YDm6ZWLoFv9G1I=
+			VFBLnaX2EAxt9ckqw1ITDGk9JPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			zMP0xVN8Y7ajxGcKTwqWz3YBbMm6YTbawAcuYYghZik=
+			Q9Fq1HI0xQmzq67SijBLTOALenlmdkJyj9IpeyelddA=
 			</data>
 		</dict>
 		<key>Headers/UIView+TKSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JUuMD4aOngDdHst0VSL2cAumE54=
+			9iJj5KqLwd/5WHnPHB5EMK4TpgQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3l4KAB26pwUsbBJkmsLi+b8vJJAL89gZRO5ZVwqKeIo=
+			njNemT7GUpC/SHlRlfuyAZAsc3oGcWNm8iCrhdU4lWo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

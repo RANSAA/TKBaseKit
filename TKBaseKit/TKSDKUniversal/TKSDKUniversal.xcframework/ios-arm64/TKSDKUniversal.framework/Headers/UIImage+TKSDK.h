@@ -104,6 +104,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)TKBase64ConvertToImageWithString:(NSString *)str;
 
 
+/** 将UIImage转化成UIColor */
++ (UIColor *)TKImageConvertToColorWith:(UIImage *)image;
+
+/** 将UIColor转化成UIImage */
++ (UIImage *)TKColorConvertToImageWith:(UIColor *)color size:(CGSize)size;
+
 /**
  将图片大小进行等比例缩放
  image:原始图片
@@ -183,7 +189,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSTimeInterval)TKImageGifFramePlayTimeWithData:(NSData *)gifData;
 
-
+/** 返回一个1x1的透明图片，主要是在某些场景使用UIImage.new创建的空图片会被当做nil处理 */
++ (UIImage *)TKAlphaImage;
 @end
 
 NS_ASSUME_NONNULL_END

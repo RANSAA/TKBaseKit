@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/TKSDKTooImportSDK.h</key>
 		<data>
-		cOPz5/NIW7iuZGTDA2PMYa2kjdo=
+		lNRNpsBK0dRjh0JTWhrLa3nRHhw=
 		</data>
 		<key>Headers/TKSDKTool.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/TKSDKToolBase.h</key>
 		<data>
-		YxbS82U2f5MH/kKhLcGRb5jy+SA=
+		Xd0UPQ0i6HYFCqvyHwvLcrkkYeI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -387,11 +387,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cOPz5/NIW7iuZGTDA2PMYa2kjdo=
+			lNRNpsBK0dRjh0JTWhrLa3nRHhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			KDMJ8gU5UCnKC5AYBGFzd6yr6VXAXu688ps6ckODQkc=
+			dl/mXraW8x9oU6B/aZlK+mprVZ6GiIwnUa1IqNpCFWA=
 			</data>
 		</dict>
 		<key>Headers/TKSDKTool.h</key>
@@ -409,11 +409,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YxbS82U2f5MH/kKhLcGRb5jy+SA=
+			Xd0UPQ0i6HYFCqvyHwvLcrkkYeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SHeCMu8UJNye71PD8XbtEubXADpz8hoaJH2Vcw2r+Kk=
+			XnlBT2fDlOIez4g5k08DR+WfBkO5tUC8mL+S7N2jJ4c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

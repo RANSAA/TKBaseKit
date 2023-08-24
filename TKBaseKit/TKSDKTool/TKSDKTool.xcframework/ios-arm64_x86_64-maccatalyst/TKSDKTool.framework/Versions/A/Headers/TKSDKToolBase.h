@@ -19,8 +19,17 @@ NS_ASSUME_NONNULL_BEGIN
 #define TKSDKToolDeprecated(DESCRIPTION) __attribute__((deprecated(DESCRIPTION)))
 #endif
 
- 
 
+//BUG字符串是否输出日志
+#ifndef TKLog
+#ifdef DEBUG
+//#define TKLog(fmt, ...) NSLog((fmt), ##__VA_ARGS__);
+#define TKLog(FORMAT, ...) fprintf(stderr,"function:%s line:%d content: %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define TKLog(...)
+#endif
+#endif
+ 
 
 /**
  创建目录
