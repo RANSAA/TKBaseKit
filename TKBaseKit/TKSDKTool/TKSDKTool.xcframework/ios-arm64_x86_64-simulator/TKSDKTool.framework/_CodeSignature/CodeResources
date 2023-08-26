@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/TKSDKTool.h</key>
 		<data>
-		00/Wr3FBat86FdmpyXKRzIO9aQA=
+		cJLg7H77WzJInnwkbPYCClrPiU8=
 		</data>
 		<key>Headers/TKSDKToolBase.h</key>
 		<data>
@@ -34,11 +34,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4R9OvCdXils8Y7wPZqIcwgHZDLo=
+		ksuYZWdri0FkMBt+7+KkiSQsQCk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		j41h8qqIgm/raE8M6qrEtAV8LT8=
+		</data>
+		<key>PrivateHeaders/TKSDKToolCTSV3.h</key>
+		<data>
+		ef2PjmVZdmMso+yDz/fBlCGecH4=
 		</data>
 		<key>TKSDKTool.bundle/loading/loadError@2x.png</key>
 		<data>
@@ -398,11 +402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			00/Wr3FBat86FdmpyXKRzIO9aQA=
+			cJLg7H77WzJInnwkbPYCClrPiU8=
 			</data>
 			<key>hash2</key>
 			<data>
-			x8lzOGhjq/RnspipRGYeG8PF8yihZeffeAt7AbyMCCo=
+			WN5nGF0ruC6eAsRxPc0Yhesd6UEFhf69fEtVyRPx0hg=
 			</data>
 		</dict>
 		<key>Headers/TKSDKToolBase.h</key>
@@ -425,6 +429,17 @@
 			<key>hash2</key>
 			<data>
 			O1OIdVhp+zwItAwoH3jsMx76vSU2VxPMbGqtMr2XEs8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/TKSDKToolCTSV3.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ef2PjmVZdmMso+yDz/fBlCGecH4=
+			</data>
+			<key>hash2</key>
+			<data>
+			TjqygqTrOf3vnlFxXJ2g4zYD1R8gsupMD3mxFyhCEbA=
 			</data>
 		</dict>
 		<key>TKSDKTool.bundle/loading/loadError@2x.png</key>

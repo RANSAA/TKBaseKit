@@ -16,7 +16,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.2.1"         #版本
+  spec.version      = "2.2.2"         #版本
   spec.summary      = "基础通用框架，以及一些工具和一些三方框架的二次封装！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -28,8 +28,8 @@ Pod::Spec.new do |spec|
   spec.author       = { "sayaDev" => "1352892108@qq.com" }    #作者
   spec.source       = { :git => "https://github.com/RANSAA/TKBaseKit.git", :tag => "v#{spec.version}" } #对应github资源与版本
   spec.requires_arc = true    #支持arc
-  spec.platform     = :ios, "9.0"         #支持版本
-  # spec.ios.deployment_target = '9.0'
+  spec.platform     = :ios, "11.0"         #支持版本
+  # spec.ios.deployment_target = '11.0'
   # spec.osx.deployment_target = '10.15'
   
   # spec.static_framework = true  #静态库，如果该pod中依赖了静态库，需要将该属性设置为true
@@ -43,9 +43,9 @@ Pod::Spec.new do |spec|
   # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'                 : 排除模拟生成arm64， Xcode12会在模拟器模式下生成arm64架构
   # spec.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   spec.xcconfig = { 
-    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES",
-    'OTHER_LDFLAGS' => '-ObjC',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
+    # "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES",
+    'OTHER_LDFLAGS' => '-ObjC -all_load',
+    # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
   }
 
 
@@ -64,12 +64,12 @@ Pod::Spec.new do |spec|
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.xcframework"
-    ss.dependency 'Masonry'
-    ss.dependency 'YYModel'
-    ss.dependency 'MBProgressHUD'
-    ss.dependency 'GTMBase64'                       #, '~> 1.0.1'
-    ss.dependency 'MJRefresh'                       #, '~> 3.7.5'
-    ss.dependency 'AFNetworking'                    , '~> 4.0'
+    ss.dependency 'MJRefresh',      '~> 3.7'
+    ss.dependency 'GTMBase64'
+    ss.dependency 'AFNetworking'
+    ss.dependency 'MBProgressHUD'                     
+    ss.dependency 'Masonry'         #,:git => 'https://github.com/ctsfork/Masonry.git'             
+    ss.dependency 'YYModel'         #,:git => 'https://github.com/ctsfork/YYModel.git'      
 
   end
 

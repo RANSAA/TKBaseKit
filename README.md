@@ -4,8 +4,9 @@
 
 
 ### 更新⚠️⚠️： 
-1. v2.2.1版本支持Xcode14, iOS版本支持切换到11.0+
-2. 对内置的三方库引用切换到了ctsfok用户的fok版本，而不是用原作者的库，所以引用方式有一点变动，切换的三方库有：
+1. 注意：使用时最好固定到某个具体的版本,因为这只是一个自用的SDK，版本之间可能会有大改。
+2. v2.2.2版本支持Xcode14, iOS版本支持切换到11.0+
+3. 对内置的三方库引用切换到了ctsfok用户的fok版本，而不是用原作者的库，所以引用方式有一点变动，切换的三方库有：
 ```
 Masonry:
 主分支：
@@ -84,9 +85,56 @@ TKSDKTool.bundle
 
 
 
-<br>
+## Frameworks的制作与测试
+1. 制作framework:直接创建framework项目即可，framework可分为动态库和静态库；
+```
+可以通过Build Settings -> Mach-O Type 更改framework的类型。
+一般可选为： "Static Library", "Dynamic Library"
+```
+2. 同工作空间的其它项目测试framework的相关配置：
+```
+在测试项目中需要进行以下配置才能进行正确的测试
+
+1. Build Settings ->  Other Linker Flags 中添加：
+    1. -ObjC
+    2. -all_load
+    3. $(inherited)
+    4. Framework(.framework类型的动/静态库)
+        -framework 
+        "TKSDKUniversal"
+       Static Library(.a类型的静态库)    
+        -l"Masonry"
+    说明：
+        1,2项用于加载静态库中比如类别，IBInspectable，IB_DESIGNABLE设计的类，如果不加则在项目中可能找不到相关类。
+        3项用于自动加载一些如Cocospods管理的一些配置，推荐默认可以加上。
+        4项用于加载动静态库，如果没有该设置，那么在测试项目中将找不到对应的库。它们加载库的区别：-framework用于加载Framework类型的库，-l"xx"用于加载.a类型的库。
+
+2. Build Settings -> Framework Search Paths
+    说明：如果要加载一些其他的库时出现找不到的情况时需要再该项中配置对应framework的搜索路径。
+    注意：默认不需要配置只有出现前面的问题才配置。
+
+
+3. General -> Frameworks,Libraries,and Embedded Content
+    说明：该项用于将其他的库(Frameworks)嵌入该项目中。
+    1. 不使用Cocospods管理项目:
+        1.将需要测试的framework添加到该项；
+        2.注意被嵌入的framework的签名方式(这跟Framework目标的Signing & Capabilities项中是否开启签名有关)，
+        一般可设置为：“Do Not Embed”, "Embed Sign"。可根据项目具体情况设置。
+        如果这两项设置有问题一遍表现为：无法安装(提示签名错误)，程序运行崩溃(提示找不到对应的framework)。
+
+    2. 使用Cocospods管理项目:
+        可不做配置直接使用默认即可(也有可能需要按1的方式进行配置)。
+
+    注意：是否使用Cocospods管理项目会对这项配置有影响，如果配置不正确可以同时试试上面配置，已找到正确的配置，   
+```
+
+
+
+
 
 ## TKSDKUniversal介绍
+
+* **并未全部列出，可自行查看框架**
 
 * TKSDKUniversalMacro.h：定义了一些常用的宏。
 > ***
@@ -155,7 +203,7 @@ TKSDKTool.bundle
 
 > * **TKSDKClearManager**：缓存清理工具
 
-* **未全部列出，可自行查看框架！**
+
 
 <br>
 

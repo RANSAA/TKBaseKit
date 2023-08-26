@@ -19,9 +19,16 @@ NS_ASSUME_NONNULL_BEGIN
     1. 同时设置两个相邻的角为圆角，并且cornerRadius的值大于View的最小边乘以0.325时，此时的圆角半径立即为最小边的1/2。
     2. 同时设置两个相邻的角为圆角，并且设置边框线时，如果边框线的宽度大于某一个值时，边框线的某一个连接处会出现空白的缺失部分。
  
+ fillColor:背景填充颜色，用于代替backgroundColor属性。
+        这儿有一个bug(不明原因)在XIB(代码创建不会有这个问题)中使用时，如果backgroundColor属性的值
+    为SystemBackgroundColor(Default),那么不管fillColor在XIB中不管设置为任何值但
+    实际接收到的值总是为blackColor，要想fillColor在XIB中设置的值有效，那么
+    需要将backgroundColor属性的值设置为任何非SystemBackgroundColor(Default)的值才行。
+ 
  推荐：
     如果是正常设置是个圆角时，推荐之间使用layer的相关方法来同时设置圆角，边框线，阴影。
  */
+
 
 IB_DESIGNABLE
 @interface TKSDKCornerShadowView : UIView
@@ -40,7 +47,14 @@ IB_DESIGNABLE
 @property(nonatomic, assign) IBInspectable CGFloat borderWidth;
 @property(nonatomic, strong) IBInspectable UIColor *borderColor;
 
-/** 背景填充颜色，注:不使用backgroundColor而使用该属性设置背景颜色 */
+/**
+ 背景填充颜色，用于代替backgroundColor属性。
+ 注意：
+    这儿有一个bug(不明原因)在XIB(代码创建不会有这个问题)中使用时，如果backgroundColor属性的值
+ 为SystemBackgroundColor(Default),那么不管fillColor在XIB中不管设置为任何值但
+ 实际接收到的值总是为blackColor，要想fillColor在XIB中设置的值有效，那么
+ 需要将backgroundColor属性的值设置为任何非SystemBackgroundColor(Default)的值才行。
+ */
 @property(nonatomic, strong) IBInspectable UIColor *fillColor;
 
 @end

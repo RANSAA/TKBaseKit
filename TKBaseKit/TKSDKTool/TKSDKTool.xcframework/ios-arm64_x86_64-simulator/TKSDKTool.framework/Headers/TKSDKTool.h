@@ -2,8 +2,7 @@
 //  TKSDKTool.h
 //  TKSDKTool
 //
-//  Created by PC on 2019/11/26.
-//  Copyright © 2019 PC. All rights reserved.
+//  Created by kimi on 2023/8/26.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,5 +23,3 @@ FOUNDATION_EXPORT const unsigned char TKSDKToolVersionString[];
 #import "TKSDKAFNetworkConfig.h"
 #import "TKSDKEncryptTool.h"
 #import "TKSDKRefresh.h"
-
-
