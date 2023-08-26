@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 IB_DESIGNABLE
 @interface TKSDKCornerShadowView : UIView
-@property(nonatomic, assign) IBInspectable BOOL topLeft;
+@property(nonatomic, assign) IBInspectable BOOL topLeft ;
 @property(nonatomic, assign) IBInspectable BOOL topRight;
 @property(nonatomic, assign) IBInspectable BOOL bottomLeft;
 @property(nonatomic, assign) IBInspectable BOOL bottomRight;
@@ -56,6 +56,13 @@ IB_DESIGNABLE
  需要将backgroundColor属性的值设置为任何非SystemBackgroundColor(Default)的值才行。
  */
 @property(nonatomic, strong) IBInspectable UIColor *fillColor;
+
+
+
+
+
+    
+
 
 @end
 

@@ -40,10 +40,6 @@
 		<data>
 		j41h8qqIgm/raE8M6qrEtAV8LT8=
 		</data>
-		<key>PrivateHeaders/TKSDKToolCTSV3.h</key>
-		<data>
-		ef2PjmVZdmMso+yDz/fBlCGecH4=
-		</data>
 		<key>TKSDKTool.bundle/loading/loadError@2x.png</key>
 		<data>
 		ZA60wv9SSH4l1/G9jFE25zw2+kQ=
@@ -429,17 +425,6 @@
 			<key>hash2</key>
 			<data>
 			O1OIdVhp+zwItAwoH3jsMx76vSU2VxPMbGqtMr2XEs8=
-			</data>
-		</dict>
-		<key>PrivateHeaders/TKSDKToolCTSV3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ef2PjmVZdmMso+yDz/fBlCGecH4=
-			</data>
-			<key>hash2</key>
-			<data>
-			TjqygqTrOf3vnlFxXJ2g4zYD1R8gsupMD3mxFyhCEbA=
 			</data>
 		</dict>
 		<key>TKSDKTool.bundle/loading/loadError@2x.png</key>
