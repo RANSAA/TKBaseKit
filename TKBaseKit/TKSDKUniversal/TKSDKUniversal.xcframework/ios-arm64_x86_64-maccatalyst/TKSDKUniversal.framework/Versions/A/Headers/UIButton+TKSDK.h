@@ -27,7 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark Action
-/** 添加一个action点击事件,并且添加了0.3秒防止重复点击 */
+
+/**
+ 将addTarget:action:forControlEvents:方法包裹成block方式；
+ 并使用了UIView setAfterUserInteractionEnabled的延迟方法
+ */
 - (void)addActionWithBlock:(void(^)(UIButton *button))block;
 
 @end

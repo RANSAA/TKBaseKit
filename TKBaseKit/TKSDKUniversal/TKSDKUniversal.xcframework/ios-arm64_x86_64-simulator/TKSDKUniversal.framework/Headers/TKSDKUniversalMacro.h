@@ -73,10 +73,10 @@
 #define kNavHeight              44.0
 //状态栏高度（顶部安全区域高度）
 #define kStatusBarHeight        [UIDevice TK_getSafeTopAreaHeight]
-//底部安全区域高度
-#define kBottomSafeAreaHeight   [UIDevice TK_getSafeBottomAreaHeight]
 //获取状态栏+导航条的高度
 #define kNavStatusBarHeight     (kNavHeight + kStatusBarHeight)
+//底部安全区域高度
+#define kBottomSafeAreaHeight   [UIDevice TK_getSafeBottomAreaHeight]
 //获取导航条，状态栏，底部凹凸区域的总高度
 #define kNavAllSafeAreaHeight   (kNavStatusBarHeight + kBottomSafeAreaHeight)
 //获取状态栏和底部安全区域的总高度

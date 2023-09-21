@@ -58,12 +58,6 @@ IB_DESIGNABLE
 @property(nonatomic, strong) IBInspectable UIColor *fillColor;
 
 
-
-
-
-    
-
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -22,7 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark 防止重复点击
-/** 防止重复点击(userInteractionEnabled=NO)，0.3秒后恢复 */
+/**
+ 设置防重复点击的延迟时间，默认0.3s
+ */
+- (void)setUserInteractionEnabledDelayTime:(CGFloat)delayTime;
+/**
+ 设置开启防止重复点击操作，默认0.3秒后恢复;
+ 即:userInteractionEnabled=NO
+ */
 - (void)setAfterUserInteractionEnabled;
 
 

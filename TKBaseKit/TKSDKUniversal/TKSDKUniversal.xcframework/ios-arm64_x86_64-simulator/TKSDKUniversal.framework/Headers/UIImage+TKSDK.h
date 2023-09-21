@@ -160,12 +160,17 @@ NS_ASSUME_NONNULL_BEGIN
 */
 + (UIImage *)TKImageRotationWithImage:(UIImage *)image angle:(NSInteger)angle isExpand:(BOOL)isExpand;
 
+/**
+ 图像旋转
+ radians：旋转弧度
+ */
+- (UIImage *)TKImageRotatedByRadinas:(CGFloat)radians;
 
 /**
- 获取UIimage的大小(kb，其实是内存中所占的大小),转化成NSData对象进行计算的
- 如果是高清大图，可直接通过NSFileManager获取
+ UIImage对象在内存中的大小（以字节为单位）;
+ 注意:这个计算只是一个近似值，因为实际的内存占用可能受到系统优化和图像加载方式的影响
  */
-+ (NSInteger)TKImageMemorySizeWithImage:(UIImage *)image;
++ (NSUInteger)TKImageMemorySizeInBytes:(UIImage *)image;
 
 /**
  获取图片的实际类型
@@ -175,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
-* 将UIImage图片,分解成UIImage帧数组
+* 将Gif UIImage图片,分解成UIImage帧数组
 * data： 图片对应的NSData数据
 * scale：缩放倍率
 * 开源库: https://github.com/liyong03/YLGIFImage
