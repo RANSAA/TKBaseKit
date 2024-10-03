@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/NSTimer+TKSDK.h</key>
 		<data>
-		50n/+WK78kGBt2Uc2SA2BVW4Uzo=
+		nticQ5YkvqJVdJ6c3Q2r0RIiEgA=
 		</data>
 		<key>Headers/NSValue+TKSDK.h</key>
 		<data>
@@ -128,6 +128,10 @@
 		<data>
 		1bNnQhDezhBCfqC+ij7gJw15cO8=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		OGl4H7ny93gyz1FVztaVI+HrHt8=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -168,11 +172,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			50n/+WK78kGBt2Uc2SA2BVW4Uzo=
+			nticQ5YkvqJVdJ6c3Q2r0RIiEgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			qEZiKqYVuzidQQuMr441n6mzvGbBTbb87vJJLbUEU54=
+			Qo4fhbPzqusM7yLXdUoe+Abz58h6u4/w3QwB88j0dDE=
 			</data>
 		</dict>
 		<key>Headers/NSValue+TKSDK.h</key>
@@ -459,6 +463,17 @@
 			<key>hash2</key>
 			<data>
 			NRQhpktKsoVIaluGT1ErqPaTUyswzWks2XPJFgrs1N4=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OGl4H7ny93gyz1FVztaVI+HrHt8=
+			</data>
+			<key>hash2</key>
+			<data>
+			ozHVGGR0Pr5OAN0iNgtKU4trOsJqaz61QJTmCjaVmhI=
 			</data>
 		</dict>
 	</dict>

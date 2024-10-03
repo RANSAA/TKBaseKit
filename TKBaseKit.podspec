@@ -16,7 +16,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.2.2"         #版本
+  spec.version      = "2.2.3"         #版本
   spec.summary      = "基础通用框架，以及一些工具和一些三方框架的二次封装！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -64,13 +64,14 @@ Pod::Spec.new do |spec|
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.xcframework"
-    ss.dependency 'MJRefresh',      '~> 3.7'
-    ss.dependency 'GTMBase64'
-    ss.dependency 'AFNetworking'
-    ss.dependency 'MBProgressHUD'                     
-    ss.dependency 'Masonry'         #,:git => 'https://github.com/ctsfork/Masonry.git'             
-    ss.dependency 'YYModel'         #,:git => 'https://github.com/ctsfork/YYModel.git'      
+    ss.dependency 'MJRefresh',      '~> 3.7.9'
+    ss.dependency 'MBProgressHUD' 
 
+    ss.dependency 'GTMBase64'       ,:git => 'https://github.com/ctsfork/GTMBase64.git'  
+    ss.dependency 'Masonry'         ,:git => 'https://github.com/ctsfork/Masonry.git'             
+    ss.dependency 'YYModel'         ,:git => 'https://github.com/ctsfork/YYModel.git'    
+
+    ss.dependency 'AFNetworking'    ,:git => 'https://github.com/ctsfork/AFNetworking.git'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

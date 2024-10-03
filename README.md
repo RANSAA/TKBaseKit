@@ -3,24 +3,47 @@
 <br>
 
 
-### 更新⚠️⚠️： 
+## ⚠️⚠️说明⚠️⚠️： 
 1. 注意：使用时最好固定到某个具体的版本,因为这只是一个自用的SDK，版本之间可能会有大改。
-2. v2.2.2版本支持Xcode14, iOS版本支持切换到11.0+
-3. 对内置的三方库引用切换到了ctsfok用户的fok版本，而不是用原作者的库，所以引用方式有一点变动，切换的三方库有：
+2. v2.2.2+版本支持Xcode14, iOS版本支持切换到11.0+，支持SPM。
+3. 对内置的部分三方库引用切换到了ctsfok用户的fork版本；因为这些fork项目对原项目进行了一些维护。
 ```
-Masonry:
-主分支：
-pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git'
-指定tag：
-pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git', :tag => 'v1.1.1'
-
-
 YYModel:
 主分支：
 pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git'
 指定tag：
-pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.0.5'
+pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.2.0'
+
+
+Masonry:
+主分支：
+pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git'
+指定tag：
+pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git', :tag => '1.2.0'
+
+
+GTMBase64:
+主分支：
+pod 'GTMBase64', :git => 'https://github.com/ctsfork/GTMBase64.git'
+指定tag：
+pod 'GTMBase64', :git => 'https://github.com/ctsfork/GTMBase64.git', :tag => '1.0.2'
+
+
+AFNetworking:
+主分支：
+pod 'AFNetworking', :git => 'https://github.com/ctsfork/AFNetworking.git'
+指定tag：
+pod 'AFNetworking', :git => 'https://github.com/ctsfork/AFNetworking.git', :tag => '4.0.2'
 ```
+4. 内部引用的原作者官方三方库三方库（作者在维护），包含：
+```
+pod 'MJRefresh',  '~> 3.7.9'
+pod 'MBProgressHUD'
+```
+5. ⚠️⚠️如果使用了MJRefresh框架，那么项目最低的iOS版本为iOS 12.0
+
+
+
 
 <br>
 
@@ -36,7 +59,7 @@ pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.0.5'
 1. CocoaPods方式：
 ```
 //全部引入
-pod 'TKBaseKit', '2.2.1'    
+pod 'TKBaseKit', '2.2.2'    
 
 使用：直接导入下列头文件即可：
 #import <TKBaseKit.h>
@@ -74,12 +97,12 @@ TKSDKTool.bundle
 ```
 3. 内置依赖三方库添加，如果不使用TKSDKTool框架可不添加三方依赖，因为只有TKSDKTool内置了的三方依赖库
 ```
-    pod 'MJRefresh',     '~> 3.7'
-    pod 'GTMBase64'
-    pod 'AFNetworking'
+    pod 'MJRefresh',     '~> 3.7.9'
     pod 'MBProgressHUD'
-    pod 'Masonry',       :git => 'https://github.com/ctsfork/Masonry.git', :tag => 'v1.1.1'
-    pod 'YYModel',       :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.0.5'
+    pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git'
+    pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git'
+    pod 'GTMBase64', :git => 'https://github.com/ctsfork/GTMBase64.git'
+    pod 'AFNetworking', :git => 'https://github.com/ctsfork/AFNetworking.git', :tag => '4.0.2'
 ```
 
 

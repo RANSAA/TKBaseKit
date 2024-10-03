@@ -24,9 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /** NSTimer selector创建方式，使用TKSDKWeakProxy代理方式可解决Runloop强引用问题 */
-+ (NSTimer *)TKScheduledTimerWithTimeInterval:(NSTimeInterval)interval selector:(SEL)sel userInfo:(nullable id)userInfo repeats:yesOrNo;
++ (NSTimer *)TKScheduledTimerWithTimeInterval:(NSTimeInterval)interval selector:(SEL)sel userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo;
 /** NSTimer selector创建方式，使用TKSDKWeakProxy代理方式可解决Runloop强引用问题 */
-+ (NSTimer *)TKTimerWithTimeInterval:(NSTimeInterval)interval selector:(SEL)sel userInfo:(nullable id)userInfo repeats:yesOrNo;
++ (NSTimer *)TKTimerWithTimeInterval:(NSTimeInterval)interval selector:(SEL)sel userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo;
 
 
 @end
