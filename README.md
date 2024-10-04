@@ -1,11 +1,47 @@
 ## TKBaseKit
+简介：常用的工具类集成框架！
 
-<br>
 
 
-## ⚠️⚠️说明⚠️⚠️： 
+
+## 最新 - TKBaseKit快速添加依赖：
+
+⚠️⚠️警告：由于该项目使用了特定用户的三方库，所以需要导入指定用户的三方库。
+
+1. 两个模块都使用了，直接导入：
+```
+pod 'TKBaseKit', '2.2.3'  
+
+pod 'GTMBase64'       ,:git => 'https://github.com/ctsfork/GTMBase64.git'  
+pod 'Masonry'         ,:git => 'https://github.com/ctsfork/Masonry.git'             
+pod 'YYModel'         ,:git => 'https://github.com/ctsfork/YYModel.git'    
+pod 'AFNetworking'    ,:git => 'https://github.com/ctsfork/AFNetworking.git'
+
+pod 'MJRefresh'       #,'~> 3.7.9'   
+pod 'MBProgressHUD' 
+```
+使用方式:
+```
+#import <TKBaseKit.h>
+或者
+#import <TKSDKUniversal/TKSDKUniversal.h>
+#import <TKSDKTool/TKSDKTool.h>
+```
+
+2. 只使用TKSDKUniversal模块，直接导入：
+```
+pod 'TKBaseKit/TKSDKUniversal'
+```
+使用方式:
+```
+#import <TKSDKUniversal/TKSDKUniversal.h>
+```
+⚠️⚠️如果使用了MJRefresh并且版本 >= 3.7.7+，那么项目最低目标版本为iOS12
+
+
+## ⚠️⚠️说明： 
 1. 注意：使用时最好固定到某个具体的版本,因为这只是一个自用的SDK，版本之间可能会有大改。
-2. v2.2.2+版本支持Xcode14, iOS版本支持切换到11.0+，支持SPM。
+2. v2.2.3版本支持Xcode14, iOS版本支持切换到11.0+。
 3. 对内置的部分三方库引用切换到了ctsfok用户的fork版本；因为这些fork项目对原项目进行了一些维护。
 ```
 YYModel:
@@ -14,20 +50,17 @@ pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git'
 指定tag：
 pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git', :tag => '1.2.0'
 
-
 Masonry:
 主分支：
 pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git'
 指定tag：
 pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git', :tag => '1.2.0'
 
-
 GTMBase64:
 主分支：
 pod 'GTMBase64', :git => 'https://github.com/ctsfork/GTMBase64.git'
 指定tag：
 pod 'GTMBase64', :git => 'https://github.com/ctsfork/GTMBase64.git', :tag => '1.0.2'
-
 
 AFNetworking:
 主分支：
@@ -40,26 +73,26 @@ pod 'AFNetworking', :git => 'https://github.com/ctsfork/AFNetworking.git', :tag 
 pod 'MJRefresh',  '~> 3.7.9'
 pod 'MBProgressHUD'
 ```
-5. ⚠️⚠️如果使用了MJRefresh框架，那么项目最低的iOS版本为iOS 12.0
+5. ⚠️⚠️如果使用了MJRefresh版本 >= 3.7.7+，那么项目最低的iOS版本为iOS 12.0
 
 
 
 
-<br>
 
 ## 功能说明：
 该静态框架主要封装了一些常用的工具，以及一些三方框架的二次封装；其中又分为两个框架分别为：
 * TKSDKUniversal：通用基础库Framework封装
 * TKSDKTool：对一些三方框架进行了二次封装如：AFNetworking，MJRefresh等，具体请查看TKSDKTooImportSDK.h文件
 
-<br>
+
+
 
 ## 使用说明
 
 1. CocoaPods方式：
 ```
 //全部引入
-pod 'TKBaseKit', '2.2.2'    
+pod 'TKBaseKit', '2.2.3'    
 
 使用：直接导入下列头文件即可：
 #import <TKBaseKit.h>
@@ -97,7 +130,7 @@ TKSDKTool.bundle
 ```
 3. 内置依赖三方库添加，如果不使用TKSDKTool框架可不添加三方依赖，因为只有TKSDKTool内置了的三方依赖库
 ```
-    pod 'MJRefresh',     '~> 3.7.9'
+    pod 'MJRefresh',     '~> 3.7'
     pod 'MBProgressHUD'
     pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git'
     pod 'Masonry', :git => 'https://github.com/ctsfork/Masonry.git'
@@ -228,7 +261,7 @@ TKSDKTool.bundle
 
 
 
-<br>
+
 
 
 ## TKSDKTool介绍

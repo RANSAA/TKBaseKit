@@ -64,14 +64,13 @@ Pod::Spec.new do |spec|
   spec.subspec 'TKSDKTool' do |ss|
     ss.resources            = "#{name}/TKSDKTool/*.bundle"
     ss.vendored_frameworks  = "#{name}/TKSDKTool/TKSDKTool.xcframework"
-    ss.dependency 'MJRefresh',      '~> 3.7.9'
-    ss.dependency 'MBProgressHUD' 
+    ss.dependency 'GTMBase64'       
+    ss.dependency 'Masonry'                  
+    ss.dependency 'YYModel'          
+    ss.dependency 'AFNetworking'  
 
-    ss.dependency 'GTMBase64'       ,:git => 'https://github.com/ctsfork/GTMBase64.git'  
-    ss.dependency 'Masonry'         ,:git => 'https://github.com/ctsfork/Masonry.git'             
-    ss.dependency 'YYModel'         ,:git => 'https://github.com/ctsfork/YYModel.git'    
-
-    ss.dependency 'AFNetworking'    ,:git => 'https://github.com/ctsfork/AFNetworking.git'
+    ss.dependency 'MJRefresh'       #,'~> 3.7.9'
+    ss.dependency 'MBProgressHUD'   
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
