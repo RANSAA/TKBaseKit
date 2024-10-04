@@ -36,7 +36,12 @@ pod 'TKBaseKit/TKSDKUniversal'
 ```
 #import <TKSDKUniversal/TKSDKUniversal.h>
 ```
-⚠️⚠️如果使用了MJRefresh并且版本 >= 3.7.7+，那么项目最低目标版本为iOS12
+⚠️⚠️警告：
+1. 如果使用了MJRefresh并且版本 >= 3.7.7+，那么项目最低目标版本为iOS12
+2. 目前使用了一个公共Privacy模块用于存放PrivacyInfo.xcprivacy隐私清单，然后TKSDKUniversal与TKSDKTool模块同时依赖他。
+如果后期开发使用时出现隐私错误，可以为两个模块分别绑定隐私清单，因为该框架是同时集成了两个动态XCFramework静态框架。
+
+
 
 
 ## ⚠️⚠️说明： 
@@ -126,7 +131,7 @@ TKSDKTool.bundle
 1.  设置"Other Linker Flags"-->添加: -ObjC 
 2.  将Build Settings中的Allow Non-modular Includes In Framework Modules设为YES
 3.  将Build Settings中的 "Excluded Architectures" --> "Release" --> 选中 --> "Any iOS Simulator SDK", 为其添加："arm64"。 即排除模拟器arm64架构的生成。
-注意：第3项可以根据情况不设置。
+注意：第3项可以根据情况不设置，即直接使用XCFramework。
 ```
 3. 内置依赖三方库添加，如果不使用TKSDKTool框架可不添加三方依赖，因为只有TKSDKTool内置了的三方依赖库
 ```

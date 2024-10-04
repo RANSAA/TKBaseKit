@@ -16,7 +16,7 @@ name = "TKBaseKit"
 Pod::Spec.new do |spec|
 
   spec.name         = "#{name}"   #框架名称
-  spec.version      = "2.2.3"         #版本
+  spec.version      = "2.2.4"         #版本
   spec.summary      = "基础通用框架，以及一些工具和一些三方框架的二次封装！"          #简短的描述
   spec.description  = <<-DESC
   TKBaseKit通用基础框架，包含：
@@ -56,9 +56,28 @@ Pod::Spec.new do |spec|
   spec.public_header_files  = "#{name}/TKBaseKit.h"
 
 
+  # 目前使用了一个公共Privacy模块用于存放PrivacyInfo.xcprivacy隐私清单，然后TKSDKUniversal与TKSDKTool模块同时依赖他。
+  # 如果后期开发使用时出现隐私错误，可以为两个模块分别绑定隐私清单，因为该框架是同时集成了两个动态XCFramework静态框架。
+  spec.subspec 'Privacy' do |ss|
+    ss.resource_bundles = {
+      ## 隐私清单 - 注意:建议与资源文件分别存放在不同的bundle中
+      'TKBaseKit.Privacy' => [    
+          "TKBaseKit/PrivacyInfo.xcprivacy" 
+       ],
+  }
+  end
 
   spec.subspec 'TKSDKUniversal' do |ss|
     ss.vendored_frameworks  = "#{name}/TKSDKUniversal/TKSDKUniversal.xcframework"
+    ## 隐私清单
+    ss.dependency "TKBaseKit/Privacy"
+
+    # ## 隐私清单 - 直接添加对应的隐私清单文件
+    # ss.resource_bundles = {
+    #   'TKBaseKit.TKSDKUniversal.Privacy' => [    
+    #       "TKBaseKit/TKSDKUniversal/PrivacyInfo.xcprivacy" 
+    #    ],
+    # }
   end
 
   spec.subspec 'TKSDKTool' do |ss|
@@ -68,9 +87,18 @@ Pod::Spec.new do |spec|
     ss.dependency 'Masonry'                  
     ss.dependency 'YYModel'          
     ss.dependency 'AFNetworking'  
-
     ss.dependency 'MJRefresh'       #,'~> 3.7.9'
     ss.dependency 'MBProgressHUD'   
+
+    ## 隐私清单
+    ss.dependency "TKBaseKit/Privacy"
+
+    # ## 隐私清单 - 直接添加对应的隐私清单文件
+    # ss.resource_bundles = {
+    #   'TKBaseKit.TKSDKTool.Privacy' => [    
+    #       "TKBaseKit/TKSDKTool/PrivacyInfo.xcprivacy" 
+    #    ],
+    # }
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
